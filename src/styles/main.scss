@@ -1,7 +1,21 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './utils/reset';
+
 
 body {
   background: $c-gray;
+}
+
+.title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+
+  color: #FFFFFF;
 }
