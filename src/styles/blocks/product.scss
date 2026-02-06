@@ -8,6 +8,9 @@
 
   color: #1B2129;
 
+  &__photo{
+    width: 100%;
+  }
 
   &__name {
     font-family: Manrope;
@@ -25,7 +28,7 @@
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
- 
+
     line-height: 140%;
     letter-spacing: 0px;
 

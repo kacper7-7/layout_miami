@@ -2,16 +2,16 @@
   padding: 55px 20px ;
 
   &__item {
-    background-color: aqua;
-    min-height: 200px;
-    object-fit: cover;
+    display: block;
+    background-color: #FCFAEF;
+     margin-left: -20px;
+      margin-right: -20px;
+
   }
 
   &__photo {
     display: block;
     object-fit: cover;
-    margin-left: -20px;
-    margin-right: -20px;
 
     width: calc(100% + 40px);
   }
