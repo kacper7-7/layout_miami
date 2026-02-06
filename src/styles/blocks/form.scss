@@ -1,13 +1,36 @@
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .form {
   &__item {
 
   }
 
   &__input {
-
+    background-color: #F9F9F9;
+    border-radius: 8px;
   }
 
   &__textarea {
-    
+    background-color: #F9F9F9;
+    border-radius: 8px;
+  }
+
+  &__label {
+    &:not(:focus):not(:active) {
+      @include visually-hidden()
+    }
+
   }
 }
