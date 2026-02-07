@@ -1,14 +1,35 @@
 .links {
+  padding-top: 32px;
   &__list{
 
   }
 
   &__item {
-
+    padding-bottom: 32px;
   }
 
   &__link {
-    
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+    color: #1B2129;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    display: inline-block;
+    padding-bottom: 8px;
+
+    &:hover {
+      border-bottom: 1px solid #1B2129;
+      padding-bottom: 8px;
+    }
+
   }
 }
 
