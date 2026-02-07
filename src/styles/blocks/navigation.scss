@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+
+  &__logos {
+    display: flex;
+    gap: 24px;
+  }
+}
