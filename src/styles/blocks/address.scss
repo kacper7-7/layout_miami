@@ -1,0 +1,23 @@
+.address {
+  &__label {
+    font-family: Manrope;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+
+    color: #9393A3;
+
+  }
+
+  &__content {
+    font-family: Manrope;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    color: #191919;
+  }
+}
