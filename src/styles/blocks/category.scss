@@ -6,6 +6,12 @@
 
   }
 
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+
   &__photo {
     width: 100%;
     object-fit: cover;
@@ -20,5 +26,6 @@
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0px;
+    margin-bottom: 40px;
   }
 }

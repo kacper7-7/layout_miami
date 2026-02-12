@@ -1,0 +1,32 @@
+.picture {
+  display: flex;
+  left: 0;
+  margin-left: 0px;
+  margin-right: -40px;
+  object-fit: cover;
+  &__photo {
+    width: 100%;
+    margin-left: -20px;
+    margin-right: -20px;
+    object-fit: cover;
+  }
+}
+
+
+
+
+// .picture {
+//   background-color: aqua;
+//   display: block;
+//   background-color: #FCFAEF;
+//   width: 100%;
+//   // margin-left: -20px;
+//   // margin-right: -20px;
+
+//   &__photo {
+//     display: block;
+//     object-fit: cover;
+
+//     // width: calc(100% + 40px);
+//   }
+// }

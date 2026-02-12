@@ -6,6 +6,7 @@
   line-height: 100%;
   letter-spacing: 0px;
   vertical-align: middle;
+  margin-bottom: 48px;
 
   color: #FFFFFF;
 
@@ -21,16 +22,28 @@
 
   }
 
+
   &--third {
     font-family: Manrope;
     font-weight: 700;
     font-style: Bold;
     font-size: 32px;
- 
+    line-height: 32px;
+    letter-spacing: 0px;
+
+
+    color: #1B2129;
+
+  }
+
+  &--fourth {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
     line-height: 32px;
     letter-spacing: 0px;
 
     color: #1B2129;
-
   }
 }

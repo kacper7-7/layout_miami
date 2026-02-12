@@ -20,7 +20,7 @@
       defer
     ></script>
   </head>
-  <body>
+  <body class="body">
     <header class="header" id="header">
       <nav class="navigation">
         <a href=""><img src="./src/images/photos/Logo (2).svg" alt=""></a>
@@ -55,8 +55,8 @@
     </div>
 
     <main class="main" id="home">
-      <section class="products">
-        <h2 class="title title--secondary" id="recommended">Recommended</h2>
+      <section class="section section--first">
+        <h2 class="title title--secondary main__title" id="recommended">Recommended</h2>
         <article class="product">
           <img class="product__photo" src="./src/images/photos/product-1.jpg" alt="">
           <h3 class="product__name">
@@ -70,7 +70,7 @@
           </p>
         </article>
 
-        <article class="product">
+        <article class="article product">
           <img class="product__photo" src="./src/images/photos/product-2.jpg" alt="">
           <h3 class="product__name">
             BEOPLAY HX
@@ -96,8 +96,8 @@
         </article>
       </section>
 
-      <section class="categories" id="categories">
-        <h2 class="title title--third">
+      <section class="section" id="categories">
+        <h2 class="title title--third main__title">
           Sound. Vision.
           <br>
           It’s your pick.
@@ -119,7 +119,7 @@
             <img class="category__photo" src="./src/images/photos/category-photo-6.jpg" alt="">
           </div>
           <p class="category__name">
-            Smart Home
+            Earphones
           </p>
         </article>
 
@@ -129,17 +129,20 @@
             <img class="category__photo" src="./src/images/photos/category-photo-22.jpg" alt="">
           </div>
           <p class="category__name">
-            Portable speakers
+            Smart Home
           </p>
         </article>
 
-        <a class="button" href="">View all</a>
+        <a class="button button--first" href="">View all</a>
       </section>
 
-      <section class="main__item">
-        <img class="main__photo"src="./src/images/photos/about-us-photo.jpg" alt="">
+      <section class="section">
+        <div class="picture">
+          <img class="picture__photo"src="./src/images/photos/about-us-photo.jpg" alt="">
+        </div>
 
-        <article class="about-us" id="about-us">
+
+        <article class="about-us section__main" id="about-us">
           <h3 class="about-us__title">
             Timeless, for 50
             years and
@@ -152,8 +155,8 @@
         </article>
       </section>
 
-      <section class="contac-us" id="contact-us">
-        <h3 class="contact-us__title">
+      <section class="section section--third" id="contact-us">
+        <h3 class="title title--fourth main__title">
           Contact us
         </h3>
 
@@ -168,7 +171,7 @@
             <input id="email" class="form__input" type="text" placeholder="Email">
           </div>
 
-          <div class="form__item">
+          <div class="form__item form__item--last">
             <label class="form__label" for="message">Message</label>
             <textarea class="form__textarea" id="message"placeholder="Message"></textarea>
           </div>
@@ -190,9 +193,6 @@
             Minneapolis, MN 55401</p>
         </address>
       </section>
-
-
-
     </main>
 
   </body>

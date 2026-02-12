@@ -1,18 +1,7 @@
 .main {
-  padding: 55px 20px ;
+  padding: 0px 20px 55px ;
 
-  &__item {
-    display: block;
-    background-color: #FCFAEF;
-     margin-left: -20px;
-      margin-right: -20px;
-
-  }
-
-  &__photo {
-    display: block;
-    object-fit: cover;
-
-    width: calc(100% + 40px);
+  &__title {
+    margin-bottom: 48px;
   }
 }
