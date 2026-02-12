@@ -1,9 +1,7 @@
 @use '../utils/mixins';
 
 .header {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+
   height: 100vh;
   padding: 0 20px 40px;
   box-sizing: border-box;
@@ -15,17 +13,7 @@
 
   grid-template-rows: 1fr 1fr;
 
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(2, 130px);
-  gap: 20px;
-
-
-  @include mixins.for-desktop() {
-  grid-template-columns: repeat(12, 63px);
-  grid-template-rows: 1fr 1fr;
-  gap: 24px;
-  }
+  @include grid();
 
   &__navigation {
     grid-column: 1 / 3;

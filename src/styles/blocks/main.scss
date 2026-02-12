@@ -8,16 +8,8 @@
   }
 
   &__content {
-    display: grid;
-    grid-template-columns: repeat(2, 130px);
-    gap: 20px;
-    grid-column: 1fr;
-    justify-content: space-between;
 
-    @include mixins.for-desktop () {
-      grid-template-columns: repeat(12, 63px);
-      gap: 24px;
-    }
+    @include mixins.grid()
   }
 
 
