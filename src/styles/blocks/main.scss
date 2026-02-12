@@ -1,7 +1,44 @@
+@use '../utils/mixins';
+
 .main {
   padding: 0px 20px 55px ;
 
   &__title {
     margin-bottom: 48px;
   }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    gap: 20px;
+    grid-column: 1fr;
+    justify-content: space-between;
+
+    @include mixins.for-desktop () {
+      grid-template-columns: repeat(12, 63px);
+      gap: 24px;
+    }
+  }
+
+
+
+
+  &__product {
+    grid-column: 1 / -1;
+
+    @include mixins.for-desktop () {
+      &--1 {
+        grid-column: 1 / 4;
+      }
+
+      &--2 {
+        grid-column: 4 / 8;
+      }
+
+      &--3 {
+        grid-column: 8 / 13;
+      }
+    }
+  }
+
 }
