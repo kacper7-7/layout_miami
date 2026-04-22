@@ -23,7 +23,7 @@
   <body class="body">
     <header class="header" id="header">
       <nav class="navigation header__navigation">
-        <a href="">
+        <a href="#">
           <picture>
             <source
               media="(min-width: 744px)"
@@ -34,10 +34,10 @@
           </picture>
         </a>
         <div class="navigation__logos">
-          <a class="phone" href="">
+          <a class="phone" href="#" aria-label="Call us">
             <span class="phone__label">+1 234 555-55-55</span>
           </a>
-          <a class="burger" href="#menu">
+          <a class="burger" href="#menu" aria-label="Menu">
             <span class="burger__label">Menu</span>
           </a>
         </div>
@@ -51,7 +51,7 @@
 
     <div class="menu" id="menu">
       <nav class="navigation">
-       <a href=""><img src="./src/images/photos/Logo (2).svg" alt=""></a>
+       <a href="#"><img src="./src/images/photos/Logo (2).svg" alt=""></a>
        <a href="#header"><img src="./src/images/photos/Icon-Close (1).svg" alt=""></a>
       </nav>
       <nav class="links">
@@ -64,7 +64,7 @@
       </nav>
 
       <p class="menu__paragraph">+1 234 5555-55-55</p>
-      <a class="menu__call-link" href="">call to order</a>
+      <a class="menu__call-link" href="#">call to order</a>
     </div>
 
     <main class="main" id="home">
@@ -146,7 +146,7 @@
           </p>
         </article>
         <div class="button">
-          <a class="button-1" href="">View all</a>
+          <a class="button-1" href="#">View all</a>
         </div>
 
       </section>
@@ -189,19 +189,18 @@
                 <label class="form__label" for="message">Message</label>
                 <textarea class="form__textarea" id="message"placeholder="Message"></textarea>
               </div>
+              <div class="button">
+                <button type="submit" class="button-1">Send</button>
+              </div>
             </form>
-          <div class="button">
-            <a class="button-1" href="">Send</a>
-          </div>
-
           </div>
           <div class="contact__address">
             <address class="address contact__address--nopadd">
-              <h4 class="address__label">Phone</h4>
+              <p class="address__label">Phone</p>
               <p class="address__content">+1 234 5555-55-55</p>
-              <h4 class="address__label">Email</h4>
+              <p class="address__label">Email</p>
               <p class="address__content">hello@bang&olufsen.com</p>
-              <h4 class="address__label">Address</h4>
+              <p class="address__label">Address</p>
               <p class="address__content">
                 400 first ave.
                 <br>
