@@ -1,22 +1,60 @@
+@use '../utils/mixins';
+
 .about-us {
-  padding: 55px 20px;
+  padding: 48px 20px;
+
+  @include mixins.tablet() {
+      display: grid;
+      padding: 120px 72px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 24px;
+      height: 416px;
+      box-sizing: border-box;
+    }
+
+
+  @include mixins.for-desktop() {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+      padding: 120px;
+    }
+
 
   &__title {
     font-family: Manrope;
     font-weight: 700;
-    font-style: Bold;
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: 0px;
+
+    @include mixins.tablet() {
+      grid-column: 1 / 4;
+    }
+
+    @include mixins.for-desktop() {
+      grid-column: 1 / 7;
+    }
   }
 
   &__paragraph {
     font-family: Manrope;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.15px;
+    padding-top: 24px;
+
+
+    @include mixins.tablet() {
+      padding-top: 0;
+      grid-column: 4 / 7;
+    }
+
+    @include mixins.for-desktop() {
+      padding-top: 0;
+      grid-column: 7 / -1;
+    }
+
 
   }
 }

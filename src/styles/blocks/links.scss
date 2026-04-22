@@ -1,7 +1,10 @@
+@use '../utils/mixins';
+
 .links {
   padding-top: 32px;
-  &__list{
 
+  @include tablet() {
+    padding-top: 56px;
   }
 
   &__item {

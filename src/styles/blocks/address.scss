@@ -1,5 +1,11 @@
+@use '../utils/mixins';
+
 .address {
   padding-top: 48px;
+
+  @include mixins.tablet() {
+      padding-top: 80px;
+    }
 
   &__label {
     font-family: Manrope;

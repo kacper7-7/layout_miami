@@ -1,0 +1,33 @@
+@use '../utils/mixins';
+
+.burger {
+
+  &__label {
+    @include mixins.visually-hidden();
+  }
+
+  &::before {
+    content: '';
+    background-image: url(./images/photos/mobile/burger-mobile.png);
+    background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transition: background-image 0.7s ease;
+
+
+    @include mixins.tablet () {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &:hover {
+    @include mixins.for-desktop() {
+      &::before {
+      background-image: url('./images/photos/mobile/hover/burger-hover.png');
+      }
+    }
+
+  }
+}

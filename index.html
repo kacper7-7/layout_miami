@@ -23,10 +23,23 @@
   <body class="body">
     <header class="header" id="header">
       <nav class="navigation header__navigation">
-        <a href=""><img src="./src/images/photos/Logo (2).svg" alt=""></a>
+        <a href="">
+          <picture>
+            <source
+              media="(min-width: 744px)"
+              srcset="./src/images/photos/tablet-desktop/B&O-tablet-desktop.png">
+            <img
+              src="./src/images/photos/mobile/B&O.png"
+              alt="Bang & Olufsen">
+          </picture>
+        </a>
         <div class="navigation__logos">
-          <a href=""><img src="./src/images/photos/Icon-Phone-call (1).svg" alt=""></a>
-          <a href="#menu"><img src="./src/images/photos/Icon-Burger-menu (1).svg" alt=""></a>
+          <a class="phone" href="">
+            <span class="phone__label">+1 234 555-55-55</span>
+          </a>
+          <a class="burger" href="#menu">
+            <span class="burger__label">Menu</span>
+          </a>
         </div>
       </nav>
       <h1 class="title header__title">
@@ -55,11 +68,11 @@
     </div>
 
     <main class="main" id="home">
-      <section class="section main__section section--first">
+      <section class="section section__first">
         <h2 class="title title--secondary main__title" id="recommended">Recommended</h2>
         <div class="main__content">
           <article class="product main__product main__product--1">
-            <img class="product__photo" src="./src/images/photos/product-1.jpg" alt="">
+            <img class="product__photo" src="./src/images/photos/recommended/recommended-imag-1.png" alt="">
             <h3 class="product__name">
               BEOSOUND A5
             </h3>
@@ -71,7 +84,7 @@
             </p>
           </article>
           <article class="product main__product main__product--2">
-            <img class="product__photo" src="./src/images/photos/product-2.jpg" alt="">
+            <img class="product__photo" src="./src/images/photos/recommended/recommended-imag-2.png" alt="">
             <h3 class="product__name">
               BEOPLAY HX
             </h3>
@@ -82,7 +95,7 @@
             </p>
           </article>
           <article class="product main__product main__product--3">
-            <img class="product__photo" src="./src/images/photos/product-3.jpg" alt="">
+            <img class="product__photo" src="./src/images/photos/recommended/recommended-imag-3.png" alt="">
             <h3 class="product__name">
               BEOSOUND THEATRE
             </h3>
@@ -105,8 +118,8 @@
 
         <article class="category">
           <div class="category__item">
-            <img class="category__photo" src="./src/images/photos/category-photo-11.jpg" alt="">
-            <img class="category__photo" src="./src/images/photos/category-photo-22.jpg" alt="">
+            <img class="category__photo category__photo--1" src="./src/images/photos/category-images/desktop-photo-1.jpg" alt="">
+            <img class="category__photo category__photo--2" src="./src/images/photos/category-images/desktop-photo-2.jpg" alt="">
           </div>
           <p class="category__name">
             Portable speakers
@@ -115,8 +128,8 @@
 
         <article class="category">
           <div class="category__item">
-            <img class="category__photo" src="./src/images/photos/category-photo-5.jpg" alt="">
-            <img class="category__photo" src="./src/images/photos/category-photo-6.jpg" alt="">
+            <img class="category__photo category__photo--1" src="./src/images/photos/category-images/desktop-photo-3.jpg" alt="">
+            <img class="category__photo category__photo--2" src="./src/images/photos/category-images/desktop-photo-4.jpg" alt="">
           </div>
           <p class="category__name">
             Earphones
@@ -125,20 +138,22 @@
 
         <article class="category">
           <div class="category__item">
-            <img class="category__photo" src="./src/images/photos/category-photo-11.jpg" alt="">
-            <img class="category__photo" src="./src/images/photos/category-photo-22.jpg" alt="">
+            <img class="category__photo category__photo--1" src="./src/images/photos/category-images/desktop-photo-5.jpg" alt="">
+            <img class="category__photo category__photo--2" src="./src/images/photos/category-images/desktop-photo-6.jpg" alt="">
           </div>
           <p class="category__name">
             Smart Home
           </p>
         </article>
+        <div class="button">
+          <a class="button-1" href="">View all</a>
+        </div>
 
-        <a class="button button--first" href="">View all</a>
       </section>
 
       <section class="section main__section">
         <div class="picture">
-          <img class="picture__photo"src="./src/images/photos/about-us-photo.jpg" alt="">
+          <img class="picture__photo" src="./src/images/photos/about-us-photo.png" alt="">
         </div>
 
 
@@ -156,42 +171,46 @@
       </section>
 
       <section class="section main__section section--third" id="contact-us">
-        <h3 class="title title--fourth main__title">
+        <h3 class="title title--fourth main__title main__title--fourth">
           Contact us
         </h3>
-
-        <form class="form">
-          <div class="form__item">
-            <label class="form__label"for="name">Name</label>
-            <input id="name" class="form__input" type="text" placeholder="Name">
+        <div class="contact">
+          <div class="contact__form">
+            <form class="form">
+              <div class="form__item">
+                <label class="form__label" for="name">Name</label>
+                <input id="name" class="form__input" type="text" placeholder="Name">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="email">Email</label>
+                <input id="email" class="form__input" type="text" placeholder="Email">
+              </div>
+              <div class="form__item form__item--last">
+                <label class="form__label" for="message">Message</label>
+                <textarea class="form__textarea" id="message"placeholder="Message"></textarea>
+              </div>
+            </form>
+          <div class="button">
+            <a class="button-1" href="">Send</a>
           </div>
 
-          <div class="form__item">
-            <label class="form__label" for="email">Email</label>
-            <input id="email" class="form__input" type="text" placeholder="Email">
           </div>
-
-          <div class="form__item form__item--last">
-            <label class="form__label" for="message">Message</label>
-            <textarea class="form__textarea" id="message"placeholder="Message"></textarea>
+          <div class="contact__address">
+            <address class="address contact__address--nopadd">
+              <h4 class="address__label">Phone</h4>
+              <p class="address__content">+1 234 5555-55-55</p>
+              <h4 class="address__label">Email</h4>
+              <p class="address__content">hello@bang&olufsen.com</p>
+              <h4 class="address__label">Address</h4>
+              <p class="address__content">
+                400 first ave.
+                <br>
+                suite 700
+                <br>
+                Minneapolis, MN 55401</p>
+            </address>
           </div>
-        </form>
-
-        <a class="button button--primary" href="">Send</a>
-
-        <address class="address">
-          <h4 class="address__label">Phone</h4>
-          <p class="address__content">+1 234 5555-55-55</p>
-          <h4 class="address__label">Email</h4>
-          <p class="address__content">hello@bang&olufsen.com</p>
-          <h4 class="address__label">Address</h4>
-          <p class="address__content">
-            400 first ave.
-            <br>
-            suite 700
-            <br>
-            Minneapolis, MN 55401</p>
-        </address>
+        </div>
       </section>
     </main>
 

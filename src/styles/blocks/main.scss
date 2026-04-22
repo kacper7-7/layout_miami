@@ -1,36 +1,55 @@
 @use '../utils/mixins';
 
 .main {
-  padding: 0px 20px 55px ;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px 55px;
+  box-sizing: border-box;
+
+  @include mixins.tablet() {
+    padding: 0 72px 120px;
+  }
+
+  @include mixins.for-desktop() {
+    padding: 0 120px 55px;
+  }
+
+  &__section {
+    padding-top: 96px;
+  }
 
   &__title {
-    margin-bottom: 48px;
+    margin-bottom: 56px;
+
+
+    &--fourth {
+      margin-bottom: 48px;
+
+      @include mixins.tablet() {
+      margin-bottom: 56px;
+    }
+    }
   }
 
   &__content {
-
-    @include mixins.grid()
+    @include mixins.for-desktop() {
+      display: grid;
+      grid-template-columns: repeat(12, 1f);
+      gap: 24px;
+    }
   }
-
-
-
 
   &__product {
     grid-column: 1 / -1;
 
-    @include mixins.for-desktop () {
-      &--1 {
-        grid-column: 1 / 4;
-      }
+    @include mixins.tablet() {
+      grid-column: 1 / 7;
+    }
 
-      &--2 {
-        grid-column: 4 / 8;
-      }
-
-      &--3 {
-        grid-column: 8 / 13;
-      }
+    @include mixins.for-desktop() {
+      &--1 { grid-column: 1 / 5; }
+      &--2 { grid-column: 5 / 9; }
+      &--3 { grid-column: 9 / 13; }
     }
   }
-
 }
