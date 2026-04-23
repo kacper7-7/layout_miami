@@ -1,14 +1,15 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .about-us {
   padding: 48px 20px;
 
   @include mixins.tablet() {
       display: grid;
-      padding: 120px 72px;
+      padding: vars.$padding-lg vars.$padding-md;
       grid-template-columns: repeat(6, 1fr);
-      gap: 24px;
-      height: 416px;
+      gap: vars.$gap-sm;
+      height: vars.$height-lg;
       box-sizing: border-box;
     }
 
@@ -16,16 +17,16 @@
   @include mixins.for-desktop() {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: 24px;
-      padding: 120px;
+      gap: vars.$gap-sm;
+      padding: vars.$padding-lg;
     }
 
 
   &__title {
-    font-family: Manrope;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
+    font-family: Manrope, sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-lg;
+    line-height: vars.$line-height;
 
     @include mixins.tablet() {
       grid-column: 1 / 4;
@@ -37,12 +38,12 @@
   }
 
   &__paragraph {
-    font-family: Manrope;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
+    font-family: Manrope, sans-serif;
+    font-weight: vars.$font-weight-normal;
+    font-size: vars.$font-md;
+    line-height: 1.4;
     letter-spacing: 0.15px;
-    padding-top: 24px;
+    padding-top: vars.$padding-msm;
 
 
     @include mixins.tablet() {

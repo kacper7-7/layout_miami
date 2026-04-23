@@ -1,3 +1,5 @@
+@use '../utils/vars';
+
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
   &:hover {
@@ -50,7 +52,7 @@
 
 
 @mixin input-states() {
-  background-color: #F9F9F9;
+  background-color: vars.$c-input-form-gray;
   border-radius: 8px;
   border: 1px solid transparent;
   width: 100%;
@@ -69,13 +71,13 @@
 
   &:hover {
     @include for-desktop() {
-      border: 1px solid #DBDBDB;
+      border: 1px solid vars.$c-hover-border-gray;
     }
   }
 
   &:focus {
     outline: none;
-    border: 2px solid #F98921;
+    border: 2px solid vars.$c-orange;
 
   }
 }

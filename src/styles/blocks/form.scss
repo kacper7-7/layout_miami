@@ -1,23 +1,24 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding-bottom: 32px;
+  gap: vars.$form-gap;
+  padding-bottom: vars.$form-padding-bottom;
 
 
   &__item {
-    background-color: #F9F9F9;
-    border-radius: 8px;
+    background-color: vars.$c-input-form-gray;
+    border-radius: $radius-sm;
     border: 0;
     width: 100%;
-    height: 48px;
-    line-height: 48px;
+    height: vars.$input-height;
+    line-height: vars.$input-height;
 
     &--last {
-      height: 148px;
+      height: vars.$textarea-height;
     }
   }
 
@@ -27,33 +28,33 @@
   }
 
   &__textarea {
-    background-color: #F9F9F9;
-    border-radius: 8px;
-    border: 1px solid transparent;
+    background-color: vars.$c-input-form-gray;
+    border-radius: vars.$radius-sm;
+    border: vars.$border-xsm solid transparent;
     width: 100%;
     height: 100%;
-    padding-left: 14px;
-    padding-top: 14px;
+    padding-left: vars.$padding-sm;
+    padding-top: vars.$padding-sm;
     box-sizing: border-box;
 
     &::placeholder{
       font-family: Manrope;
       font-weight: 400;
       font-style: Regular;
-      font-size: 14px;
+      font-size: vars.$font-sm;
       line-height: 140%;
       letter-spacing: 0.15px;
     }
 
     &:hover{
       @include mixins.for-desktop() {
-        border: 1px solid #DBDBDB;
+        border: 1px solid vars.$c-hover-border-gray;
       }
     }
 
     &:focus{
       outline: none;
-      border: 2px solid #F98921;
+      border: vars.$border-sm solid vars.$c-orange;
     }
   }
 

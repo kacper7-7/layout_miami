@@ -1,33 +1,32 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .address {
-  padding-top: 48px;
+  padding-top: vars.$padding-mmd;
 
   @include mixins.tablet() {
-      padding-top: 80px;
+      padding-top: vars.$padding-lmd;
     }
 
   &__label {
-    font-family: Manrope;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 14px;
-    line-height: 140%;
+    font-family: Manrope, sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-sm;
+    line-height: vars.$line-height-base;
     letter-spacing: 0.15px;
-    margin-bottom: 8px;
+    margin-bottom: vars.$margin-sm;
 
-    color: #9393A3;
+    color: vars.$c-address-label;
 
   }
 
   &__content {
-    font-family: Manrope;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 140%;
+    font-family: Manrope, sans-serif;
+    font-weight: vars.$font-weight-normal;
+    font-size: vars.$font-md;
+    line-height: vars.$line-height-base;
     letter-spacing: 0.15px;
-    margin-bottom: 24px;
-    color: #191919;
+    margin-bottom: vars.$margin-md;
+    color: vars.$c-address-content;
   }
 }

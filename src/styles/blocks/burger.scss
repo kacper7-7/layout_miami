@@ -1,4 +1,5 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .burger {
 
@@ -8,17 +9,17 @@
 
   &::before {
     content: '';
-    background-image: url(./images/photos/mobile/burger-mobile.png);
+    background-image: url('./images/photos/mobile/burger-mobile.png');
     background-size: cover;
     display: inline-block;
-    width: 24px;
-    height: 24px;
-    transition: background-image 0.7s ease;
+    width: vars.$width-sm;
+    height: vars.$height-sm;
+    transition: background-image vars.$transition-speed ease;
 
 
     @include mixins.tablet () {
-      width: 32px;
-      height: 32px;
+      width: vars.$width-md;
+      height: vars.$height-md;
     }
   }
 
