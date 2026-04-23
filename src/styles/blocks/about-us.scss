@@ -2,7 +2,7 @@
 @use '../utils/vars';
 
 .about-us {
-  padding: 48px 20px;
+  padding: vars.$padding-mmd vars.$padding-smm;
 
   @include mixins.tablet() {
       display: grid;

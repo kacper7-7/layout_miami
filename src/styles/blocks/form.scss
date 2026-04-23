@@ -11,7 +11,7 @@
 
   &__item {
     background-color: vars.$c-input-form-gray;
-    border-radius: $radius-sm;
+    border-radius: vars.$radius-sm;
     border: 0;
     width: 100%;
     height: vars.$input-height;
@@ -24,7 +24,7 @@
 
 
   &__input {
-    @include mixins.input-states()
+    @include mixins.input-states();
   }
 
   &__textarea {
@@ -38,17 +38,16 @@
     box-sizing: border-box;
 
     &::placeholder{
-      font-family: Manrope;
-      font-weight: 400;
-      font-style: Regular;
+      font-family: Manrope, sans-serif;
+      font-weight: vars.$font-weight-normal;
       font-size: vars.$font-sm;
-      line-height: 140%;
+      line-height: vars.$line-height-base;
       letter-spacing: 0.15px;
     }
 
     &:hover{
       @include mixins.for-desktop() {
-        border: 1px solid vars.$c-hover-border-gray;
+        border: vars.$border-xsx solid vars.$c-hover-border-gray;
       }
     }
 
@@ -60,7 +59,7 @@
 
   &__label {
     &:not(:focus):not(:active) {
-      @include mixins.visually-hidden()
+      @include mixins.visually-hidden();
     }
 
   }

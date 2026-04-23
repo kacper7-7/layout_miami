@@ -1,38 +1,38 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .links {
-  padding-top: 32px;
+  padding-top: vars.$padding-link;
 
-  @include tablet() {
-    padding-top: 56px;
+  @include mixins.tablet() {
+    padding-top: vars.$padding-link;
   }
 
   &__item {
-    padding-bottom: 32px;
+    padding-bottom: vars.$padding-link-1;
   }
 
   &__link {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 22px;
+    font-family: Manrope, sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-link;
 
-    line-height: 22px;
+    line-height: vars.$line-height-link;
     letter-spacing: 0px;
     vertical-align: middle;
 
-    color: #1B2129;
+    color: vars.$link;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: vars.$border-xsm solid transparent;
 
     display: inline-block;
-    padding-bottom: 8px;
+    padding-bottom: vars.$padding-link;
+
+    transition: border-color vars.$transition-speed ease;
 
     &:hover {
-      border-bottom: 1px solid #1B2129;
-      padding-bottom: 8px;
+      border-bottom: vars.$border-xsm solid vars.$link;
     }
-
   }
 }
 

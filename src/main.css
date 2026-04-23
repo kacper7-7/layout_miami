@@ -1,0 +1,20 @@
+/* Error: Undefined variable.
+ *    ,
+ * 50 |         border: vars.$border-xsx solid vars.$c-hover-border-gray;
+ *    |                 ^^^^^^^^^^^^^^^^
+ *    '
+ *   src\styles\blocks\form.scss 50:17   @content
+ *   src\styles\utils\_mixins.scss 12:5  for-desktop()
+ *   src\styles\blocks\form.scss 49:7    @import
+ *   src\styles\main.scss 15:9           root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 50 \2502          border: vars.$border-xsx solid vars.$c-hover-border-gray;\a    \2502                  ^^^^^^^^^^^^^^^^\a    \2575 \a   src\\styles\\blocks\\form.scss 50:17   @content\a   src\\styles\\utils\\_mixins.scss 12:5  for-desktop()\a   src\\styles\\blocks\\form.scss 49:7    @import\a   src\\styles\\main.scss 15:9           root stylesheet";
+}

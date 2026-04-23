@@ -1,23 +1,23 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .category {
 
   &__item {
     display: grid;
-    gap: 20px;
+    gap: vars.$gap-xs;
 
 
-    padding-bottom: 16px;
+    padding-bottom: vars.$padding-sm;
     grid-template-columns: repeat(2, 1fr);
 
     @include mixins.tablet() {
       grid-template-columns: repeat(6, 1fr);
-      gap: 24px;
+      gap: vars.$gap-sm;
     }
 
      @include mixins.for-desktop() {
       grid-template-columns: repeat(12, 1fr);
-      gap: 24px;
     }
   }
 
@@ -25,69 +25,53 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: vars.$border-radius-sm;
 
     @include mixins.tablet() {
       aspect-ratio: auto;
     }
-
-    @include mixins.for-desktop() {
-      aspect-ratio: auto;
-    }
-
-
   }
 
-  // 1. zdjęcie: 1 -> 7
   &__photo--1 {
 
     @include mixins.tablet() {
-      width: 100%;
+
       grid-column: 1 / 4;
-      grid-row: 1;
     }
 
 
     @include mixins.for-desktop() {
-      width: 100%;
       grid-column: 1 / 7;
-      grid-row: 1;
     }
 
 
   }
 
-  // 2. zdjęcie: 7 -> 13
   &__photo--2 {
 
     @include mixins.tablet() {
-      width: 100%;
       grid-column: 4 / 7;
-      grid-row: 1;
     }
 
 
     @include mixins.for-desktop() {
-       width: 100%;
       grid-column: 7 / 13;
-      grid-row: 1;
     }
 
 
   }
 
   &__name {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 18px;
-    line-height: 140%;
+    font-family: Manrope, sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-mlg;
+    line-height: vars.$line-height-base;
     letter-spacing: 0px;
-    margin-bottom: 40px;
+    margin-bottom: vars.$margin-lg;
 
 
-    @include tablet() {
-      margin-bottom: 56px;
+    @include mixins.tablet() {
+      margin-bottom: vars.$margin-blg;
     }
   }
 }

@@ -1,17 +1,15 @@
 @use '../utils/mixins';
-
+@use '../utils/vars';
 .contact {
-
-
-  @include mixins.for-desktop() {
-    grid-template-columns: repeat(12, 62px);
-    gap: 24px;
-  }
 
   @include mixins.tablet() {
     grid-template-columns: repeat(6, 80px);
-    gap: 24px;
+    gap: vars.$gap-sm;
     grid-template-rows: 1fr;
+  }
+
+  @include mixins.for-desktop() {
+    grid-template-columns: repeat(12, 62px);
   }
 
   &__form {
@@ -20,14 +18,9 @@
     @include mixins.tablet() {
       grid-column: 1 / 7;
     }
-
-    @include mixins.for-desktop() {
-      grid-column: 1 / 7;
-    }
   }
 
   &__address {
-
 
     @include mixins.tablet() {
       grid-column: 1 / 7;
@@ -37,7 +30,4 @@
       grid-column: 7 / 13;
     }
   }
-
-
-  
 }

@@ -1,9 +1,10 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .header {
 
   height: 100vh;
-  padding: 0 20px 40px;
+  padding: 0 vars.$padding-smm vars.$padding-smmd;
   box-sizing: border-box;
 
   background-image: url('./images/photos/main-photo/background.jpg');
@@ -17,38 +18,20 @@
 
 
   @include mixins.tablet() {
-      padding: 0 120px 64px;
+      padding: 0 vars.$padding-lg vars.$padding-mdl;
     }
 
 
   &__link {
-    height: 16px;
-    width: 150px;
+    height: vars.$height-xs;
+    width: vars.$width-lg;
   }
 
-
-  &__navigation {
-
-
-  }
 
   &__title {
-
-
     @include mixins.tablet() {
-      font-size: 48px;
+      font-size: vars.$font-xlg;
       margin-bottom: 0;
     }
-
-    @include mixins.for-desktop() {
-
-    }
   }
-
-  }
-
-
-
-
-
-
+}

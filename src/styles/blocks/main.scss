@@ -1,32 +1,33 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .main {
-  max-width: 1260px;
+  max-width: vars.$max-width-main;
   margin: 0 auto;
-  padding: 0 20px 55px;
+  padding: 0 vars.$padding-smm vars.$padding-main-1;
   box-sizing: border-box;
 
   @include mixins.tablet() {
-    padding: 0 72px 120px;
+    padding: 0 vars.$padding-md vars.$padding-lg;
   }
 
   @include mixins.for-desktop() {
-    padding: 0 120px 55px;
+    padding: 0 vars.$padding-lg vars.$padding-main-1;
   }
 
   &__section {
-    padding-top: 96px;
+    padding-top: vars.$padding-main-2;
   }
 
   &__title {
-    margin-bottom: 56px;
+    margin-bottom: vars.$margin-blg;
 
 
     &--fourth {
-      margin-bottom: 48px;
+      margin-bottom: vars.$margin-lgb;
 
       @include mixins.tablet() {
-      margin-bottom: 56px;
+      margin-bottom: vars.$margin-blg;
     }
     }
   }
@@ -34,17 +35,12 @@
   &__content {
     @include mixins.for-desktop() {
       display: grid;
-      grid-template-columns: repeat(12, 1f);
-      gap: 24px;
+      grid-template-columns: repeat(12, 1fr);
+      gap: vars.$gap-sm;
     }
   }
 
   &__product {
-    grid-column: 1 / -1;
-
-    @include mixins.tablet() {
-      grid-column: 1 / 7;
-    }
 
     @include mixins.for-desktop() {
       &--1 { grid-column: 1 / 5; }

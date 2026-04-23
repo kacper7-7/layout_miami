@@ -1,4 +1,4 @@
-// contact_form_colors
+// colors
 $c-gray: #eee;
 $c-orange: #f98921;
 $c-white: #FFFFFF;
@@ -8,36 +8,40 @@ $c-button-hover: #010810;
 $c-button-active: #010810;
 $c-address-label: #9393A3;
 $c-address-content: #191919;
-
+$c-link: #1B2129;
 
 // form
 $form-gap: 16px;
 $form-padding-bottom: 32px;
+
+// border radius
+$border-radius-sm: 4px;
 $radius-sm: 8px;
 
 // height
 $input-height: 48px;
 $textarea-height: 148px;
-$height-sm: 24px;
 
+$line-height-link: 22px;
 $line-height: 32px;
 $line-height-base: 1.4;
 
+$height-xs: 16px;
+$height-sm: 24px;
 $height-md: 32px;
 $height-lg: 416px;
 
 // width
 $width-sm: 24px;
 $width-md: 32px;
-
-
+$width-lg: 150px;
+$max-width-main: 1260px;
 
 // button
 $button-height: 56px;
 
-
 // gap
-$gap-xs: 1px;
+$gap-xs: 20px;
 $gap-sm: 24px;
 $gap-md: 32px;
 
@@ -45,23 +49,37 @@ $gap-md: 32px;
 $border-xsm: 1px;
 $border-sm: 2px;
 
-
 // margins
 $margin-sm: 8px;
 $margin-md: 24px;
+$margin-lg: 40px;
+$margin-lgb: 48px;
+$margin-blg: 56px;
 
 // paddings
-$padding-sm: 14px;
+$padding-link: 8px;
+$padding-xsm: 14px;
+$padding-sm: 16px;
+$padding-smm: 20px;
 $padding-msm: 24px;
+$padding-link-1: 32px;
+$padding-smmd: 40px;
 $padding-mmd: 48px;
+$padding-main-1: 55px;
+$padding-link-2: 56px;
+$padding-mdl: 64px;
 $padding-md: 72px;
 $padding-lmd: 80px;
+$padding-main-2: 96px;
 $padding-lg: 120px;
 
 // font size
 $font-sm: 14px;
 $font-md: 16px;
+$font-mlg: 18px;
+$font-link: 22px;
 $font-lg: 32px;
+$font-xlg: 48px;
 
 
 // font weights
