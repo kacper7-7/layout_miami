@@ -1,39 +1,42 @@
 @use '../utils/mixins';
+@use '../utils/vars'; 
 
 .section {
-  padding-top: 96px;
+  padding-top: vars.$padding-main-2;
 
   @include mixins.tablet() {
-      padding-top: 120px;
-    }
+    padding-top: vars.$padding-lg;
+  }
 
   &__first {
-    padding-top: 64px;
+    padding-top: vars.$padding-mdl;
 
     @include mixins.tablet() {
-      padding-top: 120px;
+      padding-top: vars.$padding-lg;
     }
   }
 
   &__main {
-    margin: 0 -20px;
-    background-color: #FCFAEF;
+    margin-left: -(vars.$margin-picture-mobile);
+    margin-right: -(vars.$margin-picture-mobile);
+    background-color: vars.$c-bg-light;
 
     @include mixins.tablet() {
-      margin: 0 -72px;
+      margin-left: -(vars.$margin-picture-tablet);
+      margin-right: -(vars.$margin-picture-tablet);
     }
 
     @include mixins.for-desktop() {
-      margin: 0 -120px;
+      margin-left: -(vars.$margin-picture-desktop);
+      margin-right: -(vars.$margin-picture-desktop);
     }
   }
 
   &--third {
-    padding-top: 64px;
-
+    padding-top: vars.$padding-mdl;
 
     @include mixins.tablet() {
-      padding-top: 120px;
+      padding-top: vars.$padding-lg;
     }
   }
 }

@@ -1,4 +1,5 @@
-@use '../utils//mixins';
+@use '../utils/mixins';
+@use '../utils/vars';
 
 .menu {
   position: fixed;
@@ -6,13 +7,13 @@
   left: 0;
   right: 0;
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
-  background-color: #F9F9F9;
-  padding: 0 20px 20px;
+  transition: transform vars.$transition-speed ease-in-out;
+  background-color: vars.$c-input-form-gray;
+  padding: 0 vars.$padding-smm vars.$padding-smm;
   height: 100vh;
 
-  @include tablet() {
-    padding: 0 72px;
+  @include mixins.tablet() {
+    padding: 0 vars.$padding-md;
   }
 
   &:target {
@@ -20,36 +21,34 @@
   }
 
   &__paragraph {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-md;
 
-    line-height: 140%;
+    line-height: vars.$line-height-base;
     letter-spacing: 2px;
     vertical-align: middle;
     text-transform: uppercase;
-    color: #1B2129;
+    color: vars.$c-link;
 
-    padding-top: 8px;
-    padding-bottom: 16px;
+    padding-top: vars.$padding-menu;
+    padding-bottom: vars.$padding-sm;
   }
 
   &__call-link {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
-    line-height: 140%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-md;
+    line-height: vars.$line-height-base;
     letter-spacing: 2px;
     vertical-align: middle;
     text-transform: uppercase;
 
-    color: #1B2129;
+    color: vars.$c-link;
     text-decoration: none;
 
-    border-bottom: 1px solid #1B2129;
-    padding-bottom: 4px;
+    border-bottom: vars.$border-xsm solid vars.$c-link;
+    padding-bottom: vars.$padding-menu;
 
   }
 }

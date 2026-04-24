@@ -1,27 +1,23 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72px;
+  height: vars.$height-navigation;
   width: 100%;
-
-  @include mixins.tablet() {
-    width: 100%;
-  }
-
 
   &__logos {
     display: flex;
-    gap: 24px;
-    height: 24px;
+    gap: vars.$gap-sm;
+    height: vars.$height-sm;
     box-sizing: border-box;
 
     @include mixins.tablet() {
-      gap: 32px;
-      height: 32px;
+      gap: vars.$gap-md;
+      height: vars.$height-md;
     }
   }
 }

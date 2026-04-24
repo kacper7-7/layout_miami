@@ -47,7 +47,7 @@
 
     &:hover{
       @include mixins.for-desktop() {
-        border: vars.$border-xsx solid vars.$c-hover-border-gray;
+        border: vars.$border-xsm solid vars.$c-hover-border-gray;
       }
     }
 

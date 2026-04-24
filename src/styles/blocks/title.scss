@@ -1,52 +1,26 @@
 @use '../utils/mixins';
+@use '../utils/vars'; // <--- DODANE
 
 .title {
-  font-family: Manrope;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 36px;
-  line-height: 100%;
-  letter-spacing: 0px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: vars.$font-weight-bold;
+  font-size: vars.$font-xl; // Zasugerowana nowa zmienna (36px)
+  line-height: 1; // 100% to po prostu 1
+  letter-spacing: 0;
   vertical-align: middle;
-  margin-bottom: 48px;
+  margin-bottom: vars.$margin-lgb; // Podmienione z 48px
 
-  color: #FFFFFF;
+  color: vars.$c-white;
 
-  &--secondary {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 0px;
-
-    color: #1B2129;
-
-  }
-
-
-  &--third {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 0px;
-
-
-    color: #1B2129;
-
-  }
-
+  // Łączymy modyfikatory, które mają te same style:
+  &--secondary,
+  &--third,
   &--fourth {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 0px;
-
-    color: #1B2129;
-
+    font-family: 'Manrope', sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-lg; // Podmienione z 32px
+    line-height: vars.$font-lg; // 32px wysokości przy 32px wielkości
+    letter-spacing: 0;
+    color: vars.$c-link;
   }
 }

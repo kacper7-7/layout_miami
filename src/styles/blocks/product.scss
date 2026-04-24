@@ -1,75 +1,67 @@
 @use '../utils/mixins';
+@use '../utils/vars';
 
 .product {
-  font-family: Manrope;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 140%;
+  font-family: 'Manrope', sans-serif;
+  font-weight: vars.$font-weight-normal;
+  font-size: vars.$font-md;
+  line-height: vars.$line-height-base;
   letter-spacing: 0.15px;
+  color: vars.$c-link;
 
-  color: #1B2129;
-
-  &__photo{
+  &__photo {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
-    background-color: #FCFAEF;
-    margin-bottom: 24px;
+    background-color: vars.$c-bg-light;
+    margin-bottom: vars.$margin-md;
     display: block;
   }
 
   &__name {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 18px;
-    line-height: 140%;
-    letter-spacing: 0px;
-    margin-bottom: 8px;
-
-  color: #1B2129;
+    font-family: 'Manrope', sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-mlg;
+    line-height: vars.$line-height-base;
+    letter-spacing: 0;
+    margin-bottom: vars.$margin-sm;
+    color: vars.$c-link;
   }
 
   &__desc {
-    font-family: Manrope;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 140%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: vars.$font-weight-normal;
+    font-size: vars.$font-md;
+    line-height: vars.$line-height-base;
     letter-spacing: 0.15px;
-
-    margin-bottom: 12px;
+    margin-bottom: vars.$margin-xs;
 
     @include mixins.tablet() {
-      margin-bottom: 34px;
+      margin-bottom: vars.$margin-product-desc-tab; 
     }
 
     @include mixins.for-desktop() {
-      margin-bottom: 12px;
+      margin-bottom: vars.$margin-xs;
     }
   }
 
   &__price {
-    font-family: Manrope;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
-
-    line-height: 140%;
-    letter-spacing: 0px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: vars.$font-weight-bold;
+    font-size: vars.$font-md;
+    line-height: vars.$line-height-base;
+    letter-spacing: 0;
   }
 
   &:not(:last-child) {
-      margin-bottom: 32px;
+    margin-bottom: vars.$padding-link-1;
 
-      @include mixins.tablet() {
-        margin-bottom: 56px;
-      }
-
-      @include mixins.for-desktop() {
-      margin-bottom: 0px;
-      }
-
+    @include mixins.tablet() {
+      margin-bottom: vars.$margin-blg;
     }
+
+    @include mixins.for-desktop() {
+      margin-bottom: 0;
+    }
+  }
 }

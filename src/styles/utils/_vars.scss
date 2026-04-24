@@ -9,6 +9,7 @@ $c-button-active: #010810;
 $c-address-label: #9393A3;
 $c-address-content: #191919;
 $c-link: #1B2129;
+$c-bg-light: #FCFAEF;
 
 // form
 $form-gap: 16px;
@@ -29,18 +30,24 @@ $line-height-base: 1.4;
 $height-xs: 16px;
 $height-sm: 24px;
 $height-md: 32px;
+$height-navigation: 72px;
 $height-lg: 416px;
+$height-picture-mobile: 200px;
+$height-picture-tablet: 400px;
+$height-picture-desktop: 460px;
 
 // width
 $width-sm: 24px;
 $width-md: 32px;
 $width-lg: 150px;
 $max-width-main: 1260px;
+$max-width-phone-label: 200px;
 
 // button
 $button-height: 56px;
 
 // gap
+$gap-phone-label-desktop: 8px;
 $gap-xs: 20px;
 $gap-sm: 24px;
 $gap-md: 32px;
@@ -50,13 +57,18 @@ $border-xsm: 1px;
 $border-sm: 2px;
 
 // margins
+$margin-picture-mobile: 20px;
+$margin-picture-tablet: 72px;
+$margin-picture-desktop: 120px;
 $margin-sm: 8px;
+$margin-xs: 12px;
 $margin-md: 24px;
 $margin-lg: 40px;
 $margin-lgb: 48px;
 $margin-blg: 56px;
 
 // paddings
+$padding-menu: 4px;
 $padding-link: 8px;
 $padding-xsm: 14px;
 $padding-sm: 16px;
@@ -79,6 +91,7 @@ $font-md: 16px;
 $font-mlg: 18px;
 $font-link: 22px;
 $font-lg: 32px;
+$font-xl: 36px;
 $font-xlg: 48px;
 
 
@@ -89,3 +102,6 @@ $font-weight-bold: 700;
 
 // transition
 $transition-speed: 0.3s;
+
+// product__desc
+$margin-product-desc-tab: 34px;
