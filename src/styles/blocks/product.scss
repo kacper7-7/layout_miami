@@ -37,7 +37,7 @@
     margin-bottom: vars.$margin-xs;
 
     @include mixins.tablet() {
-      margin-bottom: vars.$margin-product-desc-tab; 
+      margin-bottom: vars.$margin-product-desc-tab;
     }
 
     @include mixins.for-desktop() {
@@ -54,7 +54,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: vars.$padding-link-1;
+    margin-bottom: vars.$margin-lg;
 
     @include mixins.tablet() {
       margin-bottom: vars.$margin-blg;

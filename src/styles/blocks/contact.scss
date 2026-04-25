@@ -3,13 +3,14 @@
 .contact {
 
   @include mixins.tablet() {
-    grid-template-columns: repeat(6, 80px);
+    grid-template-columns: repeat(6, 1fr);
     gap: vars.$gap-sm;
     grid-template-rows: 1fr;
   }
 
   @include mixins.for-desktop() {
-    grid-template-columns: repeat(12, 62px);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
   }
 
   &__form {
@@ -27,7 +28,7 @@
     }
 
     @include mixins.for-desktop() {
-      grid-column: 7 / 13;
+      grid-column: 8 / -1;
     }
   }
 }

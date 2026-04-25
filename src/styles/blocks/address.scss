@@ -8,6 +8,12 @@
       padding-top: vars.$padding-lmd;
     }
 
+
+  @include mixins.for-desktop() {
+  padding-top: 0;
+  }
+
+
   &__label {
     font-family: Manrope, sans-serif;
     font-weight: vars.$font-weight-bold;

@@ -1,30 +1,33 @@
 @use '../utils/mixins';
 @use '../utils/vars';
 
-.button {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.buttons {
     align-items: center;
 
-
     @include mixins.tablet() {
+      display: grid;
       grid-template-columns: repeat(6, 1fr);
       gap: vars.$gap-sm;
-      width: 100%;
+
       justify-content: center;
     }
 
      @include mixins.for-desktop() {
-      grid-template-columns: repeat(12, 1fr);
       gap: vars.$gap-sm;
     }
 
-    &-1 {
-      min-height: vars.$button-height;
+    &--2 {
+      margin-top: vars.$margin-button;
+
+    }
+
+    &__button {
+       min-height: vars.$button-height;
       background-color: vars.$c-orange;
       border-radius: vars.$radius-sm;
       text-decoration: none;
       color: vars.$c-white;
+      width: 100%;
 
       border: none;
       cursor: pointer;
@@ -54,5 +57,11 @@
         background-color: vars.$c-button-active;
       }
 
+      &--2 {
+        @include mixins.for-desktop() {
+          grid-column: 1 / -1;
+        }
+      }
     }
+
   }

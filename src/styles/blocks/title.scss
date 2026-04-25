@@ -4,22 +4,22 @@
 .title {
   font-family: 'Manrope', sans-serif;
   font-weight: vars.$font-weight-bold;
-  font-size: vars.$font-xl; // Zasugerowana nowa zmienna (36px)
-  line-height: 1; // 100% to po prostu 1
+  font-size: vars.$font-xl;
+  line-height: 1;
   letter-spacing: 0;
   vertical-align: middle;
-  margin-bottom: vars.$margin-lgb; // Podmienione z 48px
+  margin-bottom: 0;
 
   color: vars.$c-white;
 
-  // Łączymy modyfikatory, które mają te same style:
+
   &--secondary,
   &--third,
   &--fourth {
     font-family: 'Manrope', sans-serif;
     font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-lg; // Podmienione z 32px
-    line-height: vars.$font-lg; // 32px wysokości przy 32px wielkości
+    font-size: vars.$font-lg;
+    line-height: vars.$font-lg;
     letter-spacing: 0;
     color: vars.$c-link;
   }

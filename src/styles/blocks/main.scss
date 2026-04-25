@@ -20,11 +20,24 @@
   }
 
   &__title {
-    margin-bottom: vars.$margin-blg;
 
 
-    &--fourth {
-      margin-bottom: vars.$margin-lgb;
+    &--first {
+      margin-bottom: vars.$margin-title-first-third;
+      @include mixins.tablet() {
+        margin-bottom: vars.$margin-blg
+      }
+    }
+
+    &--second {
+      margin-bottom: vars.$margin-title-second;
+      @include mixins.tablet() {
+        margin-bottom: vars.$margin-blg
+      }
+    }
+
+    &--third {
+      margin-bottom: vars.$margin-title-first-third;
 
       @include mixins.tablet() {
       margin-bottom: vars.$margin-blg;
@@ -49,3 +62,4 @@
     }
   }
 }
+

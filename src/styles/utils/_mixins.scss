@@ -59,6 +59,7 @@
   height: 48px;
   line-height: 48px;
   padding-left: 14px;
+  box-sizing: border-box;
 
   &::placeholder{
       font-family: Manrope;

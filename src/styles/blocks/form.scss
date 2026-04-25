@@ -6,8 +6,6 @@
   display: flex;
   flex-direction: column;
   gap: vars.$form-gap;
-  padding-bottom: vars.$form-padding-bottom;
-
 
   &__item {
     background-color: vars.$c-input-form-gray;
@@ -16,6 +14,7 @@
     width: 100%;
     height: vars.$input-height;
     line-height: vars.$input-height;
+
 
     &--last {
       height: vars.$textarea-height;
