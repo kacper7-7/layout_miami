@@ -37,7 +37,7 @@
     box-sizing: border-box;
 
     &::placeholder{
-      font-family: Manrope, sans-serif;
+      font-family: 'Manrope', sans-serif;
       font-weight: vars.$font-weight-normal;
       font-size: vars.$font-sm;
       line-height: vars.$line-height-base;
@@ -46,13 +46,14 @@
 
     &:hover{
       @include mixins.for-desktop() {
-        border: vars.$border-xsm solid vars.$c-hover-border-gray;
+        border-color: vars.$c-hover-border-gray;
       }
     }
 
     &:focus{
       outline: none;
-      border: vars.$border-sm solid vars.$c-orange;
+      border-color: vars.$c-orange;
+      box-shadow: 0 0 0 vars.$border-xsm vars.$c-orange;
     }
   }
 

@@ -2,7 +2,6 @@
 @use '../utils/vars';
 
 .buttons {
-    align-items: center;
 
     @include mixins.tablet() {
       display: grid;
@@ -32,7 +31,7 @@
       border: none;
       cursor: pointer;
 
-      font-family: Manrope, sans-serif;
+      font-family: 'Manrope', sans-serif;
       font-weight: vars.$font-weight-bold;
       font-size: vars.$font-md;
       line-height: vars.$button-height;

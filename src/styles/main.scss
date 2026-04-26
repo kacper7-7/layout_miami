@@ -1,9 +1,5 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
-
+@import './fonts';
 @import './utils/reset';
-
 @import './blocks/body';
 @import './blocks/title';
 @import './blocks/header';
@@ -22,10 +18,3 @@
 @import './blocks/contact';
 @import './blocks/phone';
 @import './blocks/burger';
-
-
-
-body {
-  background: $c-gray;
-}
-
