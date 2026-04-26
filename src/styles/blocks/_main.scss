@@ -2,45 +2,45 @@
 @use '../utils/vars';
 
 .main {
-  max-width: vars.$max-width-main;
+  max-width: vars.$max-width-content;
   margin: 0 auto;
-  padding: 0 vars.$padding-smm vars.$padding-main-1;
+  padding: 0 vars.$padding-mobile-side vars.$padding-main-bottom;
   box-sizing: border-box;
 
   @include mixins.tablet() {
-    padding: 0 vars.$padding-md vars.$padding-lg;
+    padding: 0 vars.$padding-tablet-side vars.$padding-desktop-side;
   }
 
   @include mixins.for-desktop() {
-    padding: 0 vars.$padding-lg vars.$padding-main-1;
+    padding: 0 vars.$padding-desktop-side vars.$padding-main-bottom;
   }
 
   &__section {
-    padding-top: vars.$padding-main-2;
+    padding-top: vars.$padding-section-top;
   }
 
   &__title {
 
 
     &--first {
-      margin-bottom: vars.$margin-title-first-third;
+      margin-bottom: vars.$space-2xl;
       @include mixins.tablet() {
-        margin-bottom: vars.$margin-blg
+        margin-bottom: vars.$space-3xl
       }
     }
 
     &--second {
-      margin-bottom: vars.$margin-title-second;
+      margin-bottom: vars.$space-2xl;
       @include mixins.tablet() {
-        margin-bottom: vars.$margin-blg
+        margin-bottom: vars.$space-3xl
       }
     }
 
     &--third {
-      margin-bottom: vars.$margin-title-first-third;
+      margin-bottom: vars.$space-2xl;
 
       @include mixins.tablet() {
-      margin-bottom: vars.$margin-blg;
+      margin-bottom: vars.$space-3xl;
     }
     }
   }
@@ -49,7 +49,7 @@
     @include mixins.for-desktop() {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: vars.$gap-sm;
+      gap: vars.$space-lg;
     }
   }
 

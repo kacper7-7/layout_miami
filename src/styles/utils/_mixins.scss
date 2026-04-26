@@ -8,12 +8,12 @@
 }
 
 @mixin tablet() {
-  @media (min-width: vars.$tablet-resolution) {
+  @media (min-width: vars.$bp-tablet) {
     @content;
   }
 }
 @mixin for-desktop() {
-  @media (min-width: vars.$desktop-resolution) {
+  @media (min-width: vars.$bp-desktop) {
     @content;
   }
 }
@@ -22,16 +22,16 @@
 @mixin grid() {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: vars.$gap-xs;
+  gap: vars.$space-md;
 
   @include tablet() {
     grid-template-columns: repeat(6, 1fr);
-    gap: vars.$gap-sm;
+    gap: vars.$space-lg;
   }
 
   @include for-desktop() {
     grid-template-columns: repeat(12, 1fr);
-    gap: vars.$gap-xs;
+    gap: vars.$space-md;
   }
 }
 
@@ -52,33 +52,52 @@
 
 
 @mixin input-states() {
-  background-color: vars.$c-input-form-gray;
-  border-radius: vars.$radius-sm;
-  border: vars.$border-xsm solid transparent;
+  background-color: vars.$c-bg-input;
+  border-radius: vars.$border-radius-md;
+  border: 1px solid transparent;
   width: 100%;
-  height: vars.$height-input;
-  line-height: vars.$height-input;
-  padding-left: vars.$padding-xsm;
+  height: vars.$input-height;
+  line-height: vars.$input-height;
+  padding-left: vars.$space-md;
   box-sizing: border-box;
 
   &::placeholder{
       font-family: 'Manrope';
       font-weight: vars.$font-weight-normal;
-      font-size: vars.$font-sm;
-      line-height: vars.$line-height-base;
+      font-size: vars.$font-size-xs;
+      line-height: vars.$line-height-tight-normal;
       letter-spacing: 0.15px;
     }
 
   &:hover {
     @include for-desktop() {
-      border: vars.$border-xsm solid vars.$c-hover-border-gray;
+      border: 1px solid vars.$c-border-input;
     }
   }
 
   &:focus {
     outline: none;
-    border-color: vars.$c-orange;
-    box-shadow: 0 0 0 vars.$border-xsm vars.$c-orange;
+    border-color: vars.$c-accent;
+    box-shadow: 0 0 0 1px vars.$c-accent;
 
   }
+}
+
+
+
+@mixin heading($size, $letter-spacing) {
+  font-family: 'Manrope', sans-serif;
+  font-weight: vars.$font-weight-bold;
+  font-size: $size;
+  line-height: 1;
+  letter-spacing: $letter-spacing;
+}
+
+
+@mixin body-text($size, $letter-spacing) {
+  font-family: 'Manrope', sans-serif;
+  font-weight: vars.$font-weight-normal;
+  font-size: $size;
+  line-height: vars.$line-height-tight-normal;
+  letter-spacing: $letter-spacing;
 }

@@ -2,66 +2,51 @@
 @use '../utils/vars';
 
 .product {
-  font-family: 'Manrope', sans-serif;
-  font-weight: vars.$font-weight-normal;
-  font-size: vars.$font-md;
-  line-height: vars.$line-height-base;
-  letter-spacing: 0.15px;
-  color: vars.$c-link;
+
+  @include mixins.body-text(vars.$font-size-sm, 0.15px);
+
+  color: vars.$c-text-primary;
 
   &__photo {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
-    background-color: vars.$c-bg-light;
-    margin-bottom: vars.$margin-md;
+    background-color: vars.$c-bg-cream;
+    margin-bottom: vars.$space-lg;
     display: block;
   }
 
   &__name {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-mlg;
-    line-height: vars.$line-height-base;
-    letter-spacing: 0;
-    margin-bottom: vars.$margin-sm;
-    color: vars.$c-link;
+
+    @include mixins.heading(vars.$font-size-md, 0);
+
+    margin-bottom: vars.$space-sm;
+    color: vars.$c-text-primary;
   }
 
   &__desc {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-normal;
-    font-size: vars.$font-md;
-    line-height: vars.$line-height-base;
-    letter-spacing: 0.15px;
-    margin-bottom: vars.$margin-xs;
+    margin-bottom: vars.$product-desc-margin-bottom-mobile;
+    @include mixins.body-text(vars.$font-size-sm, 0.15px);
 
     @include mixins.tablet() {
       margin-bottom: vars.$margin-product-desc-tab;
     }
 
     @include mixins.for-desktop() {
-      margin-bottom: vars.$margin-xs;
+      margin-bottom: vars.$product-desc-margin-bottom-mobile;
     }
   }
 
   &__price {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-md;
-    line-height: vars.$line-height-base;
-    letter-spacing: 0;
+
+    @include mixins.heading(vars.$font-size-sm, 0);
   }
 
   &:not(:last-child) {
-    margin-bottom: vars.$margin-lg;
+    margin-bottom: vars.$space-2xl;
 
     @include mixins.tablet() {
-      margin-bottom: vars.$margin-blg;
-    }
-
-    @include mixins.for-desktop() {
-      margin-bottom: 0;
+      margin-bottom: vars.$space-3xl;
     }
   }
 }

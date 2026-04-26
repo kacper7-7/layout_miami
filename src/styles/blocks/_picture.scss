@@ -2,20 +2,20 @@
 @use '../utils/vars';
 
 .picture {
-  margin-left: -(vars.$margin-picture-mobile);
-  margin-right: -(vars.$margin-picture-mobile);
-  height: vars.$height-picture-mobile;
+  margin-left: -(vars.$padding-mobile-side);
+  margin-right: -(vars.$padding-mobile-side);
+  height: vars.$picture-height-mobile;
 
   @include mixins.tablet() {
-    margin-left: -(vars.$margin-picture-tablet);
-    margin-right: -(vars.$margin-picture-tablet);
-    height: vars.$height-picture-tablet;
+    margin-left: -(vars.$padding-tablet-side);
+    margin-right: -(vars.$padding-tablet-side);
+    height: vars.$picture-height-tablet;
   }
 
   @include mixins.for-desktop() {
-    margin-left: -(vars.$margin-picture-desktop);
-    margin-right: -(vars.$margin-picture-desktop);
-    height: vars.$height-picture-desktop;
+    margin-left: -(vars.$padding-desktop-side);
+    margin-right: -(vars.$padding-desktop-side);
+    height: vars.$picture-height-desktop;
   }
 
   &__photo {

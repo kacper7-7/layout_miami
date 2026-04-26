@@ -12,14 +12,14 @@
     background-image: url('./images/photos/mobile/burger-mobile.png');
     background-size: cover;
     display: inline-block;
-    width: vars.$width-sm;
-    height: vars.$height-sm;
+    width: vars.$icon-size-sm;
+    height: vars.$icon-size-sm;
     transition: background-image vars.$transition-speed ease;
 
 
     @include mixins.tablet () {
-      width: vars.$width-md;
-      height: vars.$height-md;
+      width: vars.$icon-size-md;
+      height: vars.$icon-size-md;
     }
   }
 

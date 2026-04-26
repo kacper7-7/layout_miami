@@ -14,17 +14,15 @@
     display: block;
     background-image: url('./images/photos/mobile/phone-mobile.png');
     background-size: cover;
-    width: vars.$width-sm;
-    height: vars.$height-sm;
+    width: vars.$icon-size-sm;
+    height: vars.$icon-size-sm;
     flex-shrink: 0;
 
     @include mixins.tablet() {
-      width: vars.$width-md;
-      height: vars.$height-md;
+      width: vars.$icon-size-md;
+      height: vars.$icon-size-md;
     }
   }
-
-
 
   &__label {
     opacity: 0;
@@ -35,7 +33,7 @@
     overflow: hidden;
     transition: all vars.$transition-speed ease;
 
-    color: vars.$c-link;
+    color: vars.$c-text-primary;
     font-family: 'Manrope', sans-serif;
     font-weight: vars.$font-weight-bold;
     white-space: nowrap;

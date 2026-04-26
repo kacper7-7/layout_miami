@@ -1,115 +1,96 @@
-// colors
-$c-gray: #eee;
-$c-orange: #f98921;
-$c-white: #FFFFFF;
-$c-hover-border-gray: #DBDBDB;
-$c-input-form-gray: #F9F9F9;
-$c-button-hover: #010810;
-$c-button-active: #010810;
-$c-address-label: #9393A3;
-$c-address-content: #191919;
-$c-link: #1B2129;
-$c-bg-light: #FCFAEF;
 
-// form
-$form-gap: 16px;
-$form-padding-bottom: 32px;
+// Colors
+$c-text-primary: #1B2129;
+$c-text-secondary: #191919;
+$c-text-muted: #9393A3;
+$c-text-light: #FFFFFF;
 
-// border radius
-$border-radius-sm: 4px;
-$radius-sm: 8px;
+$c-bg-primary: #FFFFFF;
+$c-bg-cream: #FCFAEF;
+$c-bg-input: #F9F9F9;
+$c-bg-gray: #eee;
 
-// height
-$input-height: 48px;
-$textarea-height: 148px;
+$c-accent: #f98921;
+$c-accent-hover: #010810;
 
-$line-height-link: 22px;
-$line-height: 32px;
-$line-height-base: 1.4;
-
-$height-xs: 16px;
-$height-sm: 24px;
-$height-md: 32px;
-$height-navigation: 72px;
-$height-lg: 416px;
-$height-picture-mobile: 200px;
-$height-picture-tablet: 400px;
-$height-picture-desktop: 460px;
-$height-input: 48px;
-
-// width
-$width-sm: 24px;
-$width-md: 32px;
-$width-lg: 150px;
-$max-width-main: 1260px;
-$max-width-phone-label: 200px;
-
-// button
-$button-height: 56px;
-
-// gap
-$gap-phone-label-desktop: 8px;
-$gap-xs: 20px;
-$gap-sm: 24px;
-$gap-md: 32px;
-
-// border
-$border-xsm: 1px;
-$border-sm: 2px;
-
-// margins
-$margin-picture-mobile: 20px;
-$margin-picture-tablet: 72px;
-$margin-picture-desktop: 120px;
-$margin-sm: 8px;
-$margin-xs: 12px;
-$margin-button: 16px;
-$margin-md: 24px;
-$margin-lg: 40px;
-$margin-title-second: 47px;
-$margin-title-first-third: 48px;
-$margin-blg: 56px;
-
-// paddings
-$padding-menu: 4px;
-$padding-link: 8px;
-$padding-xsm: 14px;
-$padding-sm: 16px;
-$padding-smm: 20px;
-$padding-msm: 24px;
-$padding-link-1: 32px;
-$padding-smmd: 40px;
-$padding-mmd: 48px;
-$padding-main-1: 55px;
-$padding-link-2: 56px;
-$padding-mdl: 64px;
-$padding-md: 72px;
-$padding-lmd: 80px;
-$padding-main-2: 96px;
-$padding-lg: 120px;
-
-// font size
-$font-sm: 14px;
-$font-md: 16px;
-$font-mlg: 18px;
-$font-link: 22px;
-$font-lg: 32px;
-$font-xl: 36px;
-$font-xlg: 48px;
+$c-border-input: #DBDBDB;
 
 
-// font weights
+// Typography
+$font-family-primary: 'Manrope', sans-serif;
+
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
+$font-size-xs: 14px;
+$font-size-sm: 16px;
+$font-size-md: 18px;
+$font-size-lg: 22px;
+$font-size-xl: 32px;
+$font-size-xxl: 36px;
+$font-size-display: 48px;
 
-// transition
-$transition-speed: 0.3s;
+$line-height-tight-tight: 1;
+$line-height-tight-normal: 1.4;
+$line-height-tight-link: 22px;
 
-// product__desc
+// Spacing
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 32px;
+$space-2xl: 48px;
+$space-3xl: 64px;
+$space-4xl: 96px;
+$space-5xl: 144px;
+
+$padding-mobile-side: 20px;
+$padding-tablet-side: 72px;
+$padding-desktop-side: 120px;
+
+$padding-main-bottom: 55px;
+$padding-section-top: 96px;
+$padding-header-bottom: 40px;
+$padding-header-bottom-tablet: 64px;
 $margin-product-desc-tab: 34px;
+$gap-phone-label-desktop: 8px;
+$max-width-phone-label: 200px;
+$about-us-height-tablet: 416px;
+$product-desc-margin-bottom-mobile: 12px;
+
+// Form
+$space-md: 16px;
+$input-height: 48px;
+$textarea-height: 148px;
 
 
-// resolution
-$tablet-resolution: 744px;
-$desktop-resolution: 1020px;
+// Layout
+$max-width-content: 1260px;
+$header-height: 72px;
+
+// Picture heights
+$picture-height-mobile: 200px;
+$picture-height-tablet: 400px;
+$picture-height-desktop: 460px;
+
+
+// Components
+$button-height: 56px;
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+
+// Icon sizes
+$icon-size-sm: 24px;
+$icon-size-md: 32px;
+$logo-width: 150px;
+$logo-height: 16px;
+
+
+// Breakpoints
+$bp-tablet: 744px;
+$bp-desktop: 1020px;
+
+
+// Animation
+$transition-speed: 0.3s;

@@ -8,12 +8,12 @@
   right: 0;
   transform: translateX(-100%);
   transition: transform vars.$transition-speed ease-in-out;
-  background-color: vars.$c-input-form-gray;
-  padding: 0 vars.$padding-smm vars.$padding-smm;
+  background-color: vars.$c-bg-input;
+  padding: 0 vars.$padding-mobile-side vars.$padding-mobile-side;
   height: 100vh;
 
   @include mixins.tablet() {
-    padding: 0 vars.$padding-md;
+    padding: 0 vars.$padding-tablet-side;
   }
 
   &:target {
@@ -21,34 +21,34 @@
   }
 
   &__paragraph {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-md;
 
-    line-height: vars.$line-height-base;
-    letter-spacing: 2px;
+    @include mixins.heading(vars.$font-size-sm, 2px);
+
     vertical-align: middle;
     text-transform: uppercase;
-    color: vars.$c-link;
+    color: vars.$c-text-primary;
 
-    padding-top: vars.$padding-menu;
-    padding-bottom: vars.$padding-sm;
+    padding-top: vars.$space-xs;
+    padding-bottom: vars.$space-md;
   }
 
   &__call-link {
     font-family: 'Manrope', sans-serif;
     font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-md;
-    line-height: vars.$line-height-base;
+    font-size: vars.$font-size-sm;
+    line-height: vars.$line-height-tight-normal;
     letter-spacing: 2px;
+
+     @include mixins.heading(vars.$font-size-sm, 2px);
+
     vertical-align: middle;
     text-transform: uppercase;
 
-    color: vars.$c-link;
+    color: vars.$c-text-primary;
     text-decoration: none;
 
-    border-bottom: vars.$border-xsm solid vars.$c-link;
-    padding-bottom: vars.$padding-menu;
+    border-bottom: 1px solid vars.$c-text-primary;
+    padding-bottom: vars.$space-xs;
 
   }
 }

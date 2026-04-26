@@ -2,14 +2,14 @@
 @use '../utils/vars';
 
 .about-us {
-  padding: vars.$padding-mmd vars.$padding-smm;
+  padding: vars.$space-2xl vars.$padding-mobile-side;
 
   @include mixins.tablet() {
       display: grid;
-      padding: vars.$padding-lg vars.$padding-md;
+      padding: vars.$padding-desktop-side vars.$padding-tablet-side;
       grid-template-columns: repeat(6, 1fr);
-      gap: vars.$gap-sm;
-      height: vars.$height-lg;
+      gap: vars.$space-lg;
+      height: vars.$about-us-height-tablet;
       box-sizing: border-box;
     }
 
@@ -17,16 +17,14 @@
   @include mixins.for-desktop() {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: vars.$gap-sm;
-      padding: vars.$padding-lg;
+      gap: vars.$space-lg;
+      padding: vars.$padding-desktop-side;
     }
 
 
   &__title {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-lg;
-    line-height: vars.$line-height;
+
+    @include mixins.heading(vars.$font-size-xl, 0);
 
     @include mixins.tablet() {
       grid-column: 1 / 4;
@@ -38,12 +36,8 @@
   }
 
   &__paragraph {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-normal;
-    font-size: vars.$font-md;
-    line-height: 1.4;
-    letter-spacing: 0.15px;
-    padding-top: vars.$padding-msm;
+
+    @include mixins.body-text(vars.$font-size-sm, 0.15px);
 
 
     @include mixins.tablet() {

@@ -5,15 +5,15 @@
 
   &__item {
     display: grid;
-    gap: vars.$gap-xs;
+    gap: vars.$space-md;
 
 
-    padding-bottom: vars.$padding-sm;
+    padding-bottom: vars.$space-md;
     grid-template-columns: repeat(2, 1fr);
 
     @include mixins.tablet() {
       grid-template-columns: repeat(6, 1fr);
-      gap: vars.$gap-sm;
+      gap: vars.$space-lg;
     }
 
      @include mixins.for-desktop() {
@@ -62,16 +62,13 @@
   }
 
   &__name {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-mlg;
-    line-height: vars.$line-height-base;
-    letter-spacing: 0px;
-    margin-bottom: vars.$margin-lg;
 
+    @include mixins.heading(vars.$font-size-md, 0);
+    margin-bottom: vars.$space-2xl;
 
     @include mixins.tablet() {
-      margin-bottom: vars.$margin-blg;
+      font-size: 24px;
+      margin-bottom: vars.$space-3xl;
     }
   }
 }

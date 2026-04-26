@@ -1,42 +1,35 @@
 @use '../utils/mixins';
-@use '../utils/vars'; 
+@use '../utils/vars';
 
 .section {
-  padding-top: vars.$padding-main-2;
+  padding-top: vars.$padding-section-top;
 
   @include mixins.tablet() {
-    padding-top: vars.$padding-lg;
+    padding-top: vars.$padding-desktop-side;
   }
 
-  &__first {
-    padding-top: vars.$padding-mdl;
+  &--first,
+  &--third {
+    padding-top: vars.$padding-header-bottom-tablet;
 
     @include mixins.tablet() {
-      padding-top: vars.$padding-lg;
+      padding-top: vars.$padding-desktop-side;
     }
   }
 
   &__main {
-    margin-left: -(vars.$margin-picture-mobile);
-    margin-right: -(vars.$margin-picture-mobile);
-    background-color: vars.$c-bg-light;
+    margin-left: -(vars.$padding-mobile-side);
+    margin-right: -(vars.$padding-mobile-side);
+    background-color: vars.$c-bg-cream;
 
     @include mixins.tablet() {
-      margin-left: -(vars.$margin-picture-tablet);
-      margin-right: -(vars.$margin-picture-tablet);
+      margin-left: -(vars.$padding-tablet-side);
+      margin-right: -(vars.$padding-tablet-side);
     }
 
     @include mixins.for-desktop() {
-      margin-left: -(vars.$margin-picture-desktop);
-      margin-right: -(vars.$margin-picture-desktop);
-    }
-  }
-
-  &--third {
-    padding-top: vars.$padding-mdl;
-
-    @include mixins.tablet() {
-      padding-top: vars.$padding-lg;
+      margin-left: -(vars.$padding-desktop-side);
+      margin-right: -(vars.$padding-desktop-side);
     }
   }
 }

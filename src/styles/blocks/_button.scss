@@ -2,65 +2,61 @@
 @use '../utils/vars';
 
 .buttons {
-
     @include mixins.tablet() {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      gap: vars.$gap-sm;
+      gap: vars.$space-lg;
 
       justify-content: center;
     }
 
      @include mixins.for-desktop() {
-      gap: vars.$gap-sm;
+      gap: vars.$space-lg;
     }
 
-    &--2 {
-      margin-top: vars.$margin-button;
+    &-- {
+      margin-top: vars.$space-md;
 
     }
+ }
 
-    &__button {
-       min-height: vars.$button-height;
-      background-color: vars.$c-orange;
-      border-radius: vars.$radius-sm;
-      text-decoration: none;
-      color: vars.$c-white;
-      width: 100%;
+.buttons__button {
+  min-height: vars.$button-height;
+  background-color: vars.$c-accent;
+  border-radius: vars.$border-radius-md;
+  text-decoration: none;
+  color: vars.$c-text-light;
+  width: 100%;
 
-      border: none;
-      cursor: pointer;
+  border: none;
+  cursor: pointer;
 
-      font-family: 'Manrope', sans-serif;
-      font-weight: vars.$font-weight-bold;
-      font-size: vars.$font-md;
-      line-height: vars.$button-height;
-      letter-spacing: 0px;
-      text-align: center;
 
-      transition: background-color vars.$transition-speed ease;
+  @include mixins.heading(vars.$font-size-sm, 0);
 
-      @include mixins.tablet() {
-        grid-column: 1 / 7;
-      }
+  transition: background-color vars.$transition-speed ease;
 
-      @include mixins.for-desktop() {
-        grid-column: 1 / 5;
-      }
-
-      &:hover {
-        background-color: vars.$c-button-hover;
-      }
-
-      &:active {
-        background-color: vars.$c-button-active;
-      }
-
-      &--2 {
-        @include mixins.for-desktop() {
-          grid-column: 1 / -1;
-        }
-      }
-    }
-
+  @include mixins.tablet() {
+    grid-column: 1 / 7;
   }
+
+  @include mixins.for-desktop() {
+    grid-column: 1 / 5;
+  }
+
+  &:hover {
+    background-color: vars.$c-accent-hover;
+  }
+
+  &:active {
+    background-color: vars.$c-accent-hover;
+  }
+
+}
+
+
+.buttons__button--2 {
+  @include mixins.for-desktop() {
+    grid-column: 1 / -1;
+  }
+}

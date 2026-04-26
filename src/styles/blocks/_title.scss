@@ -2,25 +2,16 @@
 @use '../utils/vars';
 
 .title {
-  font-family: 'Manrope', sans-serif;
-  font-weight: vars.$font-weight-bold;
-  font-size: vars.$font-xl;
-  line-height: 1;
-  letter-spacing: 0;
+
+  @include mixins.heading(vars.$font-size-xxl, 0);
   vertical-align: middle;
   margin-bottom: 0;
 
-  color: vars.$c-white;
+  color: vars.$c-text-light;
 
-
-  &--secondary,
-  &--third,
-  &--fourth {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-lg;
-    line-height: vars.$font-lg;
-    letter-spacing: 0;
-    color: vars.$c-link;
+  &--section {
+    font-size: vars.$font-size-xl;
+    line-height: vars.$font-size-xl;
+    color: vars.$c-text-primary;
   }
 }

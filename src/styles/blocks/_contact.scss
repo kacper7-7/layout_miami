@@ -2,30 +2,20 @@
 @use '../utils/vars';
 .contact {
 
-  @include mixins.tablet() {
-    grid-template-columns: repeat(6, 1fr);
-    gap: vars.$gap-sm;
-    grid-template-rows: 1fr;
-  }
 
   @include mixins.for-desktop() {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: vars.$space-lg;
   }
 
   &__form {
-    grid-column: span 2;
-
-    @include mixins.tablet() {
+    @include mixins.for-desktop() {
       grid-column: 1 / 7;
     }
   }
 
   &__address {
-
-    @include mixins.tablet() {
-      grid-column: 1 / 7;
-    }
 
     @include mixins.for-desktop() {
       grid-column: 8 / -1;

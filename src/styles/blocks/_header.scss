@@ -3,7 +3,7 @@
 
 .header {
   height: 100vh;
-  padding: 0 vars.$padding-smm vars.$padding-smmd;
+  padding: 0 vars.$padding-mobile-side vars.$padding-header-bottom;
 
   box-sizing: border-box;
 
@@ -18,17 +18,17 @@
 
 
   @include mixins.tablet() {
-      padding: 0 vars.$padding-md vars.$padding-mdl;
+      padding: 0 vars.$padding-tablet-side vars.$padding-header-bottom-tablet;
     }
 
   @include mixins.for-desktop() {
-    padding: 0 vars.$padding-lg vars.$padding-mdl;
+    padding: 0 vars.$padding-desktop-side vars.$padding-header-bottom-tablet;
   }
 
 
   &__link {
-    height: vars.$height-xs;
-    width: vars.$width-lg;
+    height: vars.$logo-height;
+    width: vars.$logo-width;
   }
 
 
@@ -36,7 +36,7 @@
     margin-bottom: 0;
 
     @include mixins.tablet() {
-      font-size: vars.$font-xlg;
+      font-size: vars.$font-size-display;
     }
   }
 }
