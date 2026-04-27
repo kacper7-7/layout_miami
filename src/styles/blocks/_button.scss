@@ -44,7 +44,7 @@
 }
 
 
-.buttons__button--2 {
+.buttons__button--send {
 
   @include mixins.tablet() {
     margin-top: vars.$space-md;
