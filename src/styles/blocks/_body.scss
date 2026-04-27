@@ -3,4 +3,9 @@
 .body {
   background-color: vars.$c-text-light;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
+   &--with-menu {
+    overflow: hidden; 
+  }
 }

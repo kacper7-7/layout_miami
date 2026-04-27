@@ -35,7 +35,7 @@
           </picture>
         </a>
         <div class="navigation__logos">
-          <a class="phone" href="#contact-us" aria-label="Call us">
+          <a class="phone" href="tel:+12345555555" aria-label="Call us">
             <span class="phone__label">+1 234 555-55-55</span>
           </a>
           <a class="burger" href="#menu" aria-label="Menu">
@@ -65,7 +65,7 @@
       </nav>
 
       <p class="menu__paragraph">+1 234 5555-55-55</p>
-      <a class="menu__call-link" href="#contact-us">call to order</a>
+      <a class="menu__call-link" href="tel:+12345555555">call to order</a>
     </div>
 
     <main class="main" id="home">
@@ -181,15 +181,32 @@
             <form class="form">
               <div class="form__item">
                 <label class="form__label" for="name">Name</label>
-                <input id="name" class="form__input" type="text" placeholder="Name">
+                <input
+                  id="name"
+                  class="form__input"
+                  type="text"
+                  placeholder="Name"
+                  required minlength="2"
+                  maxlength="60">
               </div>
               <div class="form__item">
                 <label class="form__label" for="email">Email</label>
-                <input id="email" class="form__input" type="email" placeholder="Email">
+                <input
+                  id="email"
+                  class="form__input"
+                  type="email"
+                  placeholder="Email"
+                  required>
               </div>
               <div class="form__item form__item--last">
                 <label class="form__label" for="message">Message</label>
-                <textarea class="form__textarea" id="message" placeholder="Message"></textarea>
+                <textarea
+                  class="form__textarea"
+                  id="message"
+                  placeholder="Message"
+                  required
+                  minlength="10"
+                  maxlength="500"></textarea>
               </div>
               <div class="buttons buttons--form">
                 <button type="submit" class="buttons__button buttons__button--send">Send</button>
@@ -199,16 +216,21 @@
           <div class="contact__address">
             <address class="address contact__address--nopadd">
               <p class="address__label">Phone</p>
-              <p class="address__content">+1 234 5555-55-55</p>
+              <a class="address__content address__content--link" href="tel:+12345555555">+1 234 5555-55-55</a>
               <p class="address__label">Email</p>
               <p class="address__content">hello@bang&amp;olufsen.com</p>
               <p class="address__label">Address</p>
-              <p class="address__content">
+              <a
+                class="address__content address__content--link"
+                href="https://www.google.com/maps?q=400+first+ave+suite+700+Minneapolis+MN+55401"
+                target="_blank"
+                rel="noopener noreferrer">
                 400 first ave.
                 <br>
                 suite 700
                 <br>
-                Minneapolis, MN 55401</p>
+                Minneapolis, MN 55401
+              </a>
             </address>
           </div>
         </div>

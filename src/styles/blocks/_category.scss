@@ -6,10 +6,9 @@
   &__item {
     display: grid;
     gap: vars.$space-md;
-
-
     padding-bottom: vars.$space-md;
     grid-template-columns: repeat(2, 1fr);
+
 
     @include mixins.tablet() {
       grid-template-columns: repeat(6, 1fr);
@@ -26,6 +25,11 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: vars.$border-radius-sm;
+    transition: transform vars.$transition-speed ease;;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include mixins.tablet() {
       aspect-ratio: auto;

@@ -11,6 +11,7 @@
   background-color: vars.$c-bg-input;
   padding: 0 vars.$padding-mobile-side vars.$padding-mobile-side;
   height: 100vh;
+  overflow-y: auto;
 
   @include mixins.tablet() {
     padding: 0 vars.$padding-tablet-side;

@@ -4,7 +4,6 @@
 .product {
 
   @include mixins.body-text(vars.$font-size-sm, 0.15px);
-
   color: vars.$c-text-primary;
 
   &__photo {
@@ -14,6 +13,11 @@
     background-color: vars.$c-bg-cream;
     margin-bottom: vars.$space-lg;
     display: block;
+    transition: transform vars.$transition-speed ease;
+
+    &:hover {
+      transform: scale(1.05)
+    }
   }
 
   &__name {

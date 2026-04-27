@@ -13,7 +13,6 @@ raw_reports
 reports
 cypress/screenshots
 cypress/videos
-intrukcja.md
 
 *.css.map
 
@@ -29,3 +28,4 @@ Desktop.ini
 
 .env
 .env.local
+checklist.md

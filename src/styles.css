@@ -65,6 +65,10 @@ table {
 .body {
   background-color: #FFFFFF;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.body--with-menu {
+  overflow: hidden;
 }
 
 .title {
@@ -193,6 +197,10 @@ table {
   background-color: #FCFAEF;
   margin-bottom: 24px;
   display: block;
+  transition: transform 0.3s ease;
+}
+.product__photo:hover {
+  transform: scale(1.05);
 }
 .product__name {
   font-family: "Manrope", sans-serif;
@@ -259,6 +267,10 @@ table {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+.category__photo:hover {
+  transform: scale(1.05);
 }
 @media (min-width: 744px) {
   .category__photo {
@@ -525,6 +537,19 @@ table {
   line-height: 1.4;
   letter-spacing: 0.15px;
   margin-bottom: 24px;
+  transition: color 0.3s ease;
+}
+.address__content:hover {
+  color: #f98921;
+}
+.address__content--link {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 24px;
+  display: block;
+}
+.address__content--link:hover {
+  color: #f98921;
 }
 
 .navigation {
@@ -557,6 +582,7 @@ table {
   background-color: #F9F9F9;
   padding: 0 20px 20px;
   height: 100vh;
+  overflow-y: auto;
 }
 @media (min-width: 744px) {
   .menu {
