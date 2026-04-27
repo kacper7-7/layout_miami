@@ -13,7 +13,7 @@
     border: 0;
     width: 100%;
     height: vars.$input-height;
-    
+
 
 
     &--last {
@@ -37,9 +37,12 @@
     padding: vars.$space-md;
     box-sizing: border-box;
 
-    font-family: 'Manrope', sans-serif;   // ← warto dodać, bo textarea ma swój domyślny font
+    font-family: 'Manrope', sans-serif; 
     font-size: vars.$font-size-xs;
     line-height: vars.$line-height-normal;
+
+    transition: border-color vars.$transition-speed ease,
+              box-shadow vars.$transition-speed ease;
 
 
     &::placeholder{

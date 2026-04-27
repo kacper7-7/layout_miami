@@ -61,6 +61,9 @@
   padding-left: vars.$space-md;
   box-sizing: border-box;
 
+  transition: border-color vars.$transition-speed ease,
+              box-shadow vars.$transition-speed ease;
+
   &::placeholder{
       font-family: 'Manrope';
       font-weight: vars.$font-weight-normal;
