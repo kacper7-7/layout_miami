@@ -6,7 +6,7 @@
 
   @include mixins.tablet() {
       display: grid;
-      padding: vars.$padding-desktop-side vars.$padding-tablet-side;
+      padding: vars.$padding-section-top-tablet-desktop vars.$padding-tablet-side;
       grid-template-columns: repeat(6, 1fr);
       gap: vars.$space-lg;
       height: vars.$about-us-height-tablet;

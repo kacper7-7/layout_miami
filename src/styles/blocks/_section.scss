@@ -13,7 +13,7 @@
     padding-top: vars.$padding-header-bottom-tablet;
 
     @include mixins.tablet() {
-      padding-top: vars.$padding-desktop-side;
+      padding-top: $padding-section-top-tablet-desktop;
     }
   }
 
