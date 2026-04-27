@@ -36,7 +36,7 @@
     font-family: 'Manrope', sans-serif;
     font-weight: vars.$font-weight-bold;
     font-size: vars.$font-size-sm;
-    line-height: vars.$line-height-tight-normal;
+    line-height: vars.$line-height-normal;
     letter-spacing: 2px;
 
      @include mixins.heading(vars.$font-size-sm, 2px);

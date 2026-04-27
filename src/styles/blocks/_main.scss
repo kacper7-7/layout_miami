@@ -22,26 +22,13 @@
   &__title {
 
 
-    &--first {
+    &--first,
+    &--second,
+    &--third  {
       margin-bottom: vars.$space-2xl;
       @include mixins.tablet() {
-        margin-bottom: vars.$space-3xl
+        margin-bottom: vars.$margin-bottom-tablet;
       }
-    }
-
-    &--second {
-      margin-bottom: vars.$space-2xl;
-      @include mixins.tablet() {
-        margin-bottom: vars.$space-3xl
-      }
-    }
-
-    &--third {
-      margin-bottom: vars.$space-2xl;
-
-      @include mixins.tablet() {
-      margin-bottom: vars.$space-3xl;
-    }
     }
   }
 

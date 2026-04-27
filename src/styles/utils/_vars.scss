@@ -4,17 +4,14 @@ $c-text-primary: #1B2129;
 $c-text-secondary: #191919;
 $c-text-muted: #9393A3;
 $c-text-light: #FFFFFF;
-
 $c-bg-primary: #FFFFFF;
 $c-bg-cream: #FCFAEF;
 $c-bg-input: #F9F9F9;
 $c-bg-gray: #eee;
-
 $c-accent: #f98921;
-$c-accent-hover: #010810;
-
+$c-accent-hover: #1B2129;
+$c-accent-active: #010810;
 $c-border-input: #DBDBDB;
-
 
 // Typography
 $font-family-primary: 'Manrope', sans-serif;
@@ -26,13 +23,15 @@ $font-size-xs: 14px;
 $font-size-sm: 16px;
 $font-size-md: 18px;
 $font-size-lg: 22px;
+$font-size-mlg: 24px;
 $font-size-xl: 32px;
 $font-size-xxl: 36px;
+$font-size-tablet: 40px;
 $font-size-display: 48px;
+$font-size-header-title-desktop: 56px;
 
-$line-height-tight-tight: 1;
-$line-height-tight-normal: 1.4;
-$line-height-tight-link: 22px;
+$line-height-normal: 1.4;
+
 
 // Spacing
 $space-xs: 4px;
@@ -53,14 +52,11 @@ $padding-main-bottom: 55px;
 $padding-section-top: 96px;
 $padding-header-bottom: 40px;
 $padding-header-bottom-tablet: 64px;
-$margin-product-desc-tab: 34px;
-$gap-phone-label-desktop: 8px;
-$max-width-phone-label: 200px;
-$about-us-height-tablet: 416px;
-$product-desc-margin-bottom-mobile: 12px;
+$padding-address-top-tablet: 80px;
+$padding-section-top-tablet-desktop: 120px;
+
 
 // Form
-$space-md: 16px;
 $input-height: 48px;
 $textarea-height: 148px;
 
@@ -68,6 +64,12 @@ $textarea-height: 148px;
 // Layout
 $max-width-content: 1260px;
 $header-height: 72px;
+$margin-product-desc-tab: 34px;
+$gap-phone-label-desktop: 8px;
+$max-width-phone-label: 200px;
+$about-us-height-tablet: 416px;
+$product-desc-margin-bottom: 12px;
+$margin-bottom-tablet: 56px;
 
 // Picture heights
 $picture-height-mobile: 200px;

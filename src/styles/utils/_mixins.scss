@@ -65,7 +65,7 @@
       font-family: 'Manrope';
       font-weight: vars.$font-weight-normal;
       font-size: vars.$font-size-xs;
-      line-height: vars.$line-height-tight-normal;
+      line-height: vars.$line-height-normal;
       letter-spacing: 0.15px;
     }
 
@@ -98,6 +98,6 @@
   font-family: 'Manrope', sans-serif;
   font-weight: vars.$font-weight-normal;
   font-size: $size;
-  line-height: vars.$line-height-tight-normal;
+  line-height: vars.$line-height-normal;
   letter-spacing: $letter-spacing;
 }

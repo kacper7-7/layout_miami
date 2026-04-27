@@ -27,14 +27,20 @@
   }
 
   &__textarea {
+
     background-color: vars.$c-bg-input;
     border-radius: vars.$border-radius-md;
     border: 1px solid transparent;
     width: 100%;
     height: 100%;
-    padding-left: vars.$space-md;
-    padding-top: vars.$space-md;
+
+    padding: vars.$space-md;
     box-sizing: border-box;
+
+    font-family: 'Manrope', sans-serif;   // ← warto dodać, bo textarea ma swój domyślny font
+    font-size: vars.$font-size-xs;
+    line-height: vars.$line-height-normal;
+
 
     &::placeholder{
       @include mixins.body-text(vars.$font-size-xs, 0.15px)

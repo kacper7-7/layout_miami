@@ -25,7 +25,7 @@
   }
 
   &__desc {
-    margin-bottom: vars.$product-desc-margin-bottom-mobile;
+    margin-bottom: vars.$product-desc-margin-bottom;
     @include mixins.body-text(vars.$font-size-sm, 0.15px);
 
     @include mixins.tablet() {
@@ -33,7 +33,7 @@
     }
 
     @include mixins.for-desktop() {
-      margin-bottom: vars.$product-desc-margin-bottom-mobile;
+      margin-bottom: vars.$product-desc-margin-bottom;
     }
   }
 
@@ -46,7 +46,7 @@
     margin-bottom: vars.$space-2xl;
 
     @include mixins.tablet() {
-      margin-bottom: vars.$space-3xl;
+      margin-bottom: vars.$margin-bottom-tablet;
     }
   }
 }

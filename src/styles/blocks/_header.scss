@@ -38,5 +38,9 @@
     @include mixins.tablet() {
       font-size: vars.$font-size-display;
     }
+
+    @include mixins.for-desktop() {
+      font-size: vars.$font-size-header-title-desktop;
+    }
   }
 }

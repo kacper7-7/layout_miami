@@ -67,8 +67,8 @@
     margin-bottom: vars.$space-2xl;
 
     @include mixins.tablet() {
-      font-size: 24px;
-      margin-bottom: vars.$space-3xl;
+      font-size: vars.$font-size-mlg;
+      margin-bottom: vars.$margin-bottom-tablet;
     }
   }
 }

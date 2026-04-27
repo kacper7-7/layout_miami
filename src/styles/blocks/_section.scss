@@ -5,7 +5,7 @@
   padding-top: vars.$padding-section-top;
 
   @include mixins.tablet() {
-    padding-top: vars.$padding-desktop-side;
+    padding-top: vars.$padding-section-top-tablet-desktop;
   }
 
   &--first,

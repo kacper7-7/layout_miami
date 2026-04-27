@@ -11,7 +11,15 @@
 
   &--section {
     font-size: vars.$font-size-xl;
-    line-height: vars.$font-size-xl;
     color: vars.$c-text-primary;
+
+    @include mixins.tablet() {
+      font-size: vars.$font-size-tablet;
+    }
+
+    @include mixins.for-desktop() {
+      font-size: vars.$font-size-display;
+    }
+
   }
 }

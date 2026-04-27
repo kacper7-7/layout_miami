@@ -5,7 +5,7 @@
   padding-top: vars.$space-2xl;
 
   @include mixins.tablet() {
-      padding-top: 80px;
+      padding-top: vars.$padding-address-top-tablet;
     }
 
 
@@ -15,11 +15,6 @@
 
 
   &__label {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-bold;
-    font-size: vars.$font-size-xs;
-    line-height: vars.$line-height-tight-normal;
-    letter-spacing: 0.15px;
 
     @include mixins.heading(vars.$font-size-xs, 0.15px);
 
@@ -30,15 +25,11 @@
   }
 
   &__content {
-    font-family: 'Manrope', sans-serif;
-    font-weight: vars.$font-weight-normal;
-    font-size: vars.$font-size-sm;
-    line-height: vars.$line-height-tight-normal;
-    letter-spacing: 0.15px;
-    margin-bottom: vars.$space-lg;
-    color: vars.$c-text-secondary;
-
     @include mixins.body-text(vars.$font-size-sm, 0.15px);
 
+    margin-bottom: vars.$space-lg;
   }
+
+
+
 }
