@@ -10,12 +10,12 @@
     grid-template-columns: repeat(2, 1fr);
 
 
-    @include mixins.tablet() {
+    @include mixins.tablet {
       grid-template-columns: repeat(6, 1fr);
       gap: vars.$space-lg;
     }
 
-     @include mixins.for-desktop() {
+     @include mixins.for-desktop {
       grid-template-columns: repeat(12, 1fr);
     }
   }
@@ -31,20 +31,18 @@
       transform: scale(1.05);
     }
 
-    @include mixins.tablet() {
+    @include mixins.tablet {
       aspect-ratio: auto;
     }
   }
 
   &__photo--1 {
-
-    @include mixins.tablet() {
-
+    @include mixins.tablet {
       grid-column: 1 / 4;
     }
 
 
-    @include mixins.for-desktop() {
+    @include mixins.for-desktop {
       grid-column: 1 / 7;
     }
 
@@ -52,13 +50,12 @@
   }
 
   &__photo--2 {
-
-    @include mixins.tablet() {
+    @include mixins.tablet {
       grid-column: 4 / 7;
     }
 
 
-    @include mixins.for-desktop() {
+    @include mixins.for-desktop {
       grid-column: 7 / 13;
     }
 
@@ -66,11 +63,11 @@
   }
 
   &__name {
-
     @include mixins.heading(vars.$font-size-md, 0);
+
     margin-bottom: vars.$space-2xl;
 
-    @include mixins.tablet() {
+    @include mixins.tablet {
       font-size: vars.$font-size-mlg;
       margin-bottom: vars.$margin-bottom-tablet;
     }

@@ -6,13 +6,13 @@
   margin-right: -(vars.$padding-mobile-side);
   height: vars.$picture-height-mobile;
 
-  @include mixins.tablet() {
+  @include mixins.tablet {
     margin-left: -(vars.$padding-tablet-side);
     margin-right: -(vars.$padding-tablet-side);
     height: vars.$picture-height-tablet;
   }
 
-  @include mixins.for-desktop() {
+  @include mixins.for-desktop {
     margin-left: -(vars.$padding-desktop-side);
     margin-right: -(vars.$padding-desktop-side);
     height: vars.$picture-height-desktop;

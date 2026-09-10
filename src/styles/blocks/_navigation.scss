@@ -15,7 +15,7 @@
     height: vars.$icon-size-sm;
     box-sizing: border-box;
 
-    @include mixins.tablet() {
+    @include mixins.tablet {
       gap: vars.$space-xl;
       height: vars.$icon-size-md;
     }

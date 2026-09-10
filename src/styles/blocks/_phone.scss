@@ -18,7 +18,7 @@
     height: vars.$icon-size-sm;
     flex-shrink: 0;
 
-    @include mixins.tablet() {
+    @include mixins.tablet {
       width: vars.$icon-size-md;
       height: vars.$icon-size-md;
     }
@@ -34,14 +34,14 @@
     transition: all vars.$transition-speed ease;
 
     color: vars.$c-text-primary;
-    font-family: 'Manrope', sans-serif;
+    font-family: Manrope, sans-serif;
     font-weight: vars.$font-weight-bold;
     white-space: nowrap;
   }
 
 
   &:hover {
-    @include mixins.for-desktop() {
+    @include mixins.for-desktop {
       gap: vars.$gap-phone-label-desktop;
       .phone__label {
         max-width: vars.$max-width-phone-label;

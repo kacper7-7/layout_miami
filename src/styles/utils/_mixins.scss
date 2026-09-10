@@ -12,6 +12,7 @@
     @content;
   }
 }
+
 @mixin for-desktop() {
   @media (min-width: vars.$bp-desktop) {
     @content;
@@ -24,12 +25,12 @@
   grid-template-columns: repeat(2, 1fr);
   gap: vars.$space-md;
 
-  @include tablet() {
+  @include tablet {
     grid-template-columns: repeat(6, 1fr);
     gap: vars.$space-lg;
   }
 
-  @include for-desktop() {
+  @include for-desktop {
     grid-template-columns: repeat(12, 1fr);
     gap: vars.$space-md;
   }
@@ -65,7 +66,7 @@
               box-shadow vars.$transition-speed ease;
 
   &::placeholder{
-      font-family: 'Manrope', sans-serif;
+      font-family: Manrope, sans-serif;
       font-weight: vars.$font-weight-normal;
       font-size: vars.$font-size-xs;
       line-height: vars.$line-height-normal;
@@ -73,7 +74,7 @@
     }
 
   &:hover {
-    @include for-desktop() {
+    @include for-desktop {
       border: 1px solid vars.$c-border-input;
     }
   }
@@ -89,7 +90,7 @@
 
 
 @mixin heading($size, $letter-spacing) {
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope, sans-serif;
   font-weight: vars.$font-weight-bold;
   font-size: $size;
   line-height: 1;
@@ -98,7 +99,7 @@
 
 
 @mixin body-text($size, $letter-spacing) {
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope, sans-serif;
   font-weight: vars.$font-weight-normal;
   font-size: $size;
   line-height: vars.$line-height-normal;

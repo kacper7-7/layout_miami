@@ -4,7 +4,7 @@
 .burger {
 
   &__label {
-    @include mixins.visually-hidden();
+    @include mixins.visually-hidden;
   }
 
   &::before {
@@ -17,14 +17,14 @@
     transition: background-image vars.$transition-speed ease;
 
 
-    @include mixins.tablet () {
+    @include mixins.tablet {
       width: vars.$icon-size-md;
       height: vars.$icon-size-md;
     }
   }
 
   &:hover {
-    @include mixins.for-desktop() {
+    @include mixins.for-desktop {
       &::before {
       background-image: url('./images/photos/mobile/hover/burger-hover.png');
       }

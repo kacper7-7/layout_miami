@@ -3,8 +3,8 @@
 $c-text-primary: #1B2129;
 $c-text-secondary: #191919;
 $c-text-muted: #9393A3;
-$c-text-light: #FFFFFF;
-$c-bg-primary: #FFFFFF;
+$c-text-light: #FFF;
+$c-bg-primary: #FFF;
 $c-bg-cream: #FCFAEF;
 $c-bg-input: #F9F9F9;
 $c-bg-gray: #eee;
@@ -15,10 +15,8 @@ $c-border-input: #DBDBDB;
 
 // Typography
 $font-family-primary: 'Manrope', sans-serif;
-
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-
 $font-size-xs: 14px;
 $font-size-sm: 16px;
 $font-size-md: 18px;
@@ -29,7 +27,6 @@ $font-size-xxl: 36px;
 $font-size-tablet: 40px;
 $font-size-display: 48px;
 $font-size-header-title-desktop: 56px;
-
 $line-height-normal: 1.4;
 
 
@@ -43,11 +40,9 @@ $space-2xl: 48px;
 $space-3xl: 64px;
 $space-4xl: 96px;
 $space-5xl: 144px;
-
 $padding-mobile-side: 20px;
 $padding-tablet-side: 72px;
 $padding-desktop-side: 120px;
-
 $padding-main-bottom: 55px;
 $padding-section-top: 96px;
 $padding-header-bottom: 40px;

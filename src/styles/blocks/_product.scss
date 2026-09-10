@@ -2,8 +2,8 @@
 @use '../utils/vars';
 
 .product {
-
   @include mixins.body-text(vars.$font-size-sm, 0.15px);
+
   color: vars.$c-text-primary;
 
   &__photo {
@@ -21,7 +21,6 @@
   }
 
   &__name {
-
     @include mixins.heading(vars.$font-size-md, 0);
 
     margin-bottom: vars.$space-sm;
@@ -30,26 +29,26 @@
 
   &__desc {
     margin-bottom: vars.$product-desc-margin-bottom;
+
     @include mixins.body-text(vars.$font-size-sm, 0.15px);
 
-    @include mixins.tablet() {
+    @include mixins.tablet {
       margin-bottom: vars.$margin-product-desc-tab;
     }
 
-    @include mixins.for-desktop() {
+    @include mixins.for-desktop {
       margin-bottom: vars.$product-desc-margin-bottom;
     }
   }
 
   &__price {
-
     @include mixins.heading(vars.$font-size-sm, 0);
   }
 
   &:not(:last-child) {
     margin-bottom: vars.$space-2xl;
 
-    @include mixins.tablet() {
+    @include mixins.tablet {
       margin-bottom: vars.$margin-bottom-tablet;
     }
   }

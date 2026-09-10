@@ -4,7 +4,7 @@
 .links {
   padding-top: vars.$space-sm;
 
-  @include mixins.tablet() {
+  @include mixins.tablet {
     padding-top: vars.$space-sm;
   }
 

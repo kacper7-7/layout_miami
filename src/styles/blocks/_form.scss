@@ -23,11 +23,10 @@
 
 
   &__input {
-    @include mixins.input-states();
+    @include mixins.input-states;
   }
 
   &__textarea {
-
     background-color: vars.$c-bg-input;
     border-radius: vars.$border-radius-md;
     border: 1px solid transparent;
@@ -37,7 +36,7 @@
     padding: vars.$space-md;
     box-sizing: border-box;
 
-    font-family: 'Manrope', sans-serif; 
+    font-family: Manrope, sans-serif; 
     font-size: vars.$font-size-xs;
     line-height: vars.$line-height-normal;
 
@@ -50,7 +49,7 @@
     }
 
     &:hover{
-      @include mixins.for-desktop() {
+      @include mixins.for-desktop {
         border-color: vars.$c-border-input;
       }
     }
@@ -63,8 +62,8 @@
   }
 
   &__label {
-    &:not(:focus):not(:active) {
-      @include mixins.visually-hidden();
+    &:not(:focus, :active) {
+      @include mixins.visually-hidden;
     }
 
   }
