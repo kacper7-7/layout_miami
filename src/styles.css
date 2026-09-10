@@ -24,7 +24,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -448,7 +447,7 @@ table {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .form__input::placeholder {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;

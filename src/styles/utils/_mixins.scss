@@ -65,7 +65,7 @@
               box-shadow vars.$transition-speed ease;
 
   &::placeholder{
-      font-family: 'Manrope';
+      font-family: 'Manrope', sans-serif;
       font-weight: vars.$font-weight-normal;
       font-size: vars.$font-size-xs;
       line-height: vars.$line-height-normal;
