@@ -11,7 +11,7 @@ A responsive landing page for Bang & Olufsen, built as a learning project. The p
 
 ## Live preview
 
-[View live demo](https://kogutkacper7.github.io/layout_miami/)
+[View live demo](https://kacper7-7.github.io/layout_miami/)
 
 ## Layout
 
@@ -21,7 +21,7 @@ A responsive landing page for Bang & Olufsen, built as a learning project. The p
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/kogutkacper7/layout_miami.git
+git clone https://github.com/kacper7-7/layout_miami.git
 cd layout_miami
 
 # 2. Install dependencies
@@ -38,3 +38,8 @@ npm run watch:sass
 
 - `npm run watch:sass` — watches SCSS files and compiles to CSS
 - `npm run build:sass` — single compilation (production)
+
+
+### Screenshots
+
+![alt text](src/images/screens/1.png)
