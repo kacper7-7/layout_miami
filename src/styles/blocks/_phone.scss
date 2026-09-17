@@ -12,7 +12,7 @@
   &::before {
     content: '';
     display: block;
-    background-image: url('./images/photos/mobile/phone-mobile.png');
+    background-image: url('../images/photos/mobile/phone-mobile.png');
     background-size: cover;
     width: vars.$icon-size-sm;
     height: vars.$icon-size-sm;
